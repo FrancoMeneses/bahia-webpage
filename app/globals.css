@@ -5,6 +5,16 @@
 @layer utilities {
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #F5F5F5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
