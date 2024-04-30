@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Desk from '../assets/desk.jpg'
 import { ContactForm } from '@/components/Form'
 import Pana from '../assets/pana.svg'
+import Link from 'next/link'
 
 export default function Home () {
   const BANNER_TEXT = 'Bienvenido a la capital del caribe mexicano, la mejor opción para un centro de negocio.'
@@ -18,6 +19,7 @@ export default function Home () {
         text={BANNER_TEXT}
         buttonText='Ver ubicación'
         image={Pana}
+        link='/ubicacion#mapa'
       />
       <div className='flex flex-col w-full h-full px-[50px] 2xl:px-[90px]'>
         <section id='inicio-espacios' className='flex flex-col w-full h-full border py-[65px]'>
@@ -31,26 +33,39 @@ export default function Home () {
                 image={ServiceCover}
                 title='Coworking'
                 text='Trabaja de forma independiente mientras disfrutas de los beneficios de la colaboración, el intercambio de ideas y el establecimiento de conexiones significativas.'
+                link='/espacios/coworking'
               />
               <ServiceCard
                 image={ServiceCover}
-                title='Espacios privados'
+                title='Oficina privada'
                 text='Área dedicada exclusivamente a una persona o equipo específico, separada físicamente del resto del espacio compartido.'
+                link='/espacios/oficina-privada'
               />
               <ServiceCard
                 image={ServiceCover}
                 title='Oficina virtual'
                 text='Área donde disfrutar de cierto grado de privacidad visual y acústica, manteniendo un sentido de conexión con la comunidad de trabajo más amplia.'
+                link='/espacios/oficina-virtual'
               />
             </div>
-            <div className='w-full justify-start items-center'>
+            <div className='w-full flex justify-between items-center gap-[65px]'>
               <ServiceCard
                 image={ServiceCover}
-                title='Sala de juntas y de capacitación'
+                title='Sala de juntas'
                 text='Espacio designado específicamente para reuniones, presentaciones y discusiones entre equipos, clientes o socios comerciales, con tecnología audiovisual para facilitar la
                 comunicación efectiva y la colaboración durante las reuniones. Ofrece a los miembros un lugar adecuado para reunirse y trabajar en equipo, fortaleciendo así la productividad y la eficiencia.'
                 height='h-auto'
                 width='w-full'
+                link='/espacios/sala-juntas'
+              />
+              <ServiceCard
+                image={ServiceCover}
+                title='Sala de capacitación (Training Room)'
+                text='La atmósfera tranquila y profesional de la sala de capacitación la convierte en el lugar perfecto para sumergirse en el aprendizaje y la reflexión. Ya sea para una sesión de capacitación intensiva,
+                un taller interactivo o una reunión estratégica, nuestro espacio está diseñado para satisfacer todas tus necesidades de desarrollo profesional.'
+                height='h-auto'
+                width='w-full'
+                link='/espacios/sala-capacitacion'
               />
             </div>
           </div>
@@ -68,7 +83,9 @@ export default function Home () {
           <span className='text-center text-[22px] font-semibold'>
             ¡Tu futuro profesional comienza aquí!
           </span>
-          <button type='button' className='w-auto h-auto py-1.5 px-3 text-[20px] bg-[#f0fbfb] text-[#142e38] rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'>Guía para escoger espacio</button>
+          <Link href='/espacios#guia' className='w-auto h-auto py-1.5 px-3 text-[20px] bg-[#f0fbfb] text-[#142e38] rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'>
+            Guía para escoger espacio
+          </Link>
         </div>
       </section>
       <section id='contacto' className='border-y-2 border-[#142e38] mt-[65px] w-full'>

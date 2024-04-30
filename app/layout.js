@@ -4,7 +4,7 @@ import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import WhatsApp from '@/components/WhatsApp'
 
-// import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 const inter = Inter({ subsets: ['latin'] })
 

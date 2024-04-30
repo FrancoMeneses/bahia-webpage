@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const ServiceCard = ({ title, text, link, image, linkText = 'Conoce más', width = 'w-[400px]', height = 'h-[500px]' }) => {
   return (
@@ -9,9 +10,9 @@ export const ServiceCard = ({ title, text, link, image, linkText = 'Conoce más'
       </div>
       <div className='flex flex-col w-full justify-between items-center gap-4 min-h-[160px]'>
         <p className='self-start text-[16px] font-light'>{text}</p>
-        <button className='bg-[#f0fbfb] text-[#142e38] rounded-[10px] text-[18px] px-6 py-2 hover:scale-105 transition-all ease-in-out duration-150 flex justify-center items-center'>
+        <Link href={link} className='bg-[#f0fbfb] text-[#142e38] rounded-[10px] text-[18px] px-6 py-2 hover:scale-105 transition-all ease-in-out duration-150 flex justify-center items-center'>
           {linkText}
-        </button>
+        </Link>
       </div>
     </div>
   )
