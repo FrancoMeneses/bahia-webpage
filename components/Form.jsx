@@ -36,33 +36,33 @@ export const ContactForm = () => {
             <Form className='w-full h-auto flex flex-col justify-start items-center gap-[30px]'>
               <div className='flex w-full justify-center gap-7 items-start'>
                 <div className='flex flex-col w-full'>
-                  <label htmlFor='nombre' className='text-[#142e38] text-[18px]'>Nombre *</label>
-                  <Field name='nombre' type='text' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[18px]' />
+                  <label htmlFor='nombre' className='text-[#142e38] text-[16px]'>Nombre *</label>
+                  <Field name='nombre' type='text' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
                   <ErrorMessage name='nombre' component='p' className='text-red-500' />
                 </div>
                 <div className='flex flex-col w-full'>
-                  <label htmlFor='apellido' className='text-[#142e38] text-[18px]'>Apellido *</label>
-                  <Field name='apellido' type='text' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[18px]' />
+                  <label htmlFor='apellido' className='text-[#142e38] text-[16px]'>Apellido *</label>
+                  <Field name='apellido' type='text' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
                   <ErrorMessage name='apellido' component='p' className='text-red-500' />
                 </div>
               </div>
 
               <div className='flex w-full justify-center gap-7 items-start'>
                 <div className='flex flex-col w-full'>
-                  <label htmlFor='email' className='text-[#142e38] text-[18px]'>Email *</label>
-                  <Field name='email' type='email' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[18px]' />
+                  <label htmlFor='email' className='text-[#142e38] text-[16px]'>Email *</label>
+                  <Field name='email' type='email' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
                   <ErrorMessage name='email' component='p' className='text-red-500' />
                 </div>
                 <div className='flex flex-col w-full'>
-                  <label htmlFor='telefono' className='text-[#142e38] text-[18px]'>Teléfono *</label>
-                  <Field name='telefono' type='phone' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[18px]' />
+                  <label htmlFor='telefono' className='text-[#142e38] text-[16px]'>Teléfono *</label>
+                  <Field name='telefono' type='phone' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
                   <ErrorMessage name='telefono' component='p' className='text-red-500' />
                 </div>
               </div>
 
               <div className='flex flex-col w-full'>
-                <label htmlFor='mensaje' className='text-[#142e38] text-[18px]'>Mensaje *</label>
-                <Field name='mensaje' component='textarea' rows='5' className='bg-[#2c8093] rounded-[5px] text-[#f0fbfb] pl-1.5 text-[18px] resize-none' />
+                <label htmlFor='mensaje' className='text-[#142e38] text-[16px]'>Mensaje *</label>
+                <Field name='mensaje' component='textarea' rows='5' className='bg-[#2c8093] rounded-[5px] text-[#f0fbfb] pl-1.5 text-[16px] resize-none' />
                 <ErrorMessage name='mensaje' component='p' className='text-red-500' />
               </div>
 
