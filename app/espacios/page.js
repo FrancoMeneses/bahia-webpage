@@ -33,7 +33,7 @@ export default function Espacios () {
           </div>
           <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] mb-[50px]'>
             <p className='text-[22px]'>Todos nuestros espacios incluyen</p>
-            <section id='faqs' className='w-[65%] mx-auto mt-[25px]'>
+            <section id='amenidades' className='w-[65%] mx-auto mt-[25px]'>
               <div className='overflow-hidden'>
                 {/* <!-- accordion-tab  --> */}
                 <div className='group outline-none accordion-section' tabIndex='1'>
@@ -182,32 +182,45 @@ export default function Espacios () {
               </div>
             </section>
           </div>
-          <div className='flex flex-col w-full h-full justify-center items-center gap-[65px] mt-[65px]'>
+          <div className='flex flex-col w-full h-full justify-center items-center gap-[65px]'>
             <div className='flex justify-between items-center w-full h-full'>
               <ServiceCard
                 image={ServiceCover}
                 title='Coworking'
                 text='Trabaja de forma independiente mientras disfrutas de los beneficios de la colaboración, el intercambio de ideas y el establecimiento de conexiones significativas.'
+                link='/espacios/coworking'
               />
               <ServiceCard
                 image={ServiceCover}
-                title='Espacios privados'
+                title='Oficina privada'
                 text='Área dedicada exclusivamente a una persona o equipo específico, separada físicamente del resto del espacio compartido.'
+                link='/espacios/oficina-privada'
               />
               <ServiceCard
                 image={ServiceCover}
                 title='Oficina virtual'
                 text='Área donde disfrutar de cierto grado de privacidad visual y acústica, manteniendo un sentido de conexión con la comunidad de trabajo más amplia.'
+                link='/espacios/oficina-virtual'
               />
             </div>
-            <div className='w-full justify-start items-center'>
+            <div className='w-full flex justify-between items-center gap-[65px]'>
               <ServiceCard
                 image={ServiceCover}
-                title='Sala de juntas y de capacitación'
+                title='Sala de juntas'
                 text='Espacio designado específicamente para reuniones, presentaciones y discusiones entre equipos, clientes o socios comerciales, con tecnología audiovisual para facilitar la
                 comunicación efectiva y la colaboración durante las reuniones. Ofrece a los miembros un lugar adecuado para reunirse y trabajar en equipo, fortaleciendo así la productividad y la eficiencia.'
                 height='h-auto'
                 width='w-full'
+                link='/espacios/sala-juntas'
+              />
+              <ServiceCard
+                image={ServiceCover}
+                title='Sala de capacitación (Training Room)'
+                text='La atmósfera tranquila y profesional de la sala de capacitación la convierte en el lugar perfecto para sumergirse en el aprendizaje y la reflexión. Ya sea para una sesión de capacitación intensiva,
+                un taller interactivo o una reunión estratégica, nuestro espacio está diseñado para satisfacer todas tus necesidades de desarrollo profesional.'
+                height='h-auto'
+                width='w-full'
+                link='/espacios/sala-capacitacion'
               />
             </div>
           </div>

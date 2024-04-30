@@ -2,11 +2,17 @@
 
 import { BannerEspacios } from '@/components/BannerEspacios'
 import { ContactForm } from '@/components/Form'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 import { Carousel } from 'react-responsive-carousel'
 import Image from 'next/image'
 import Desk from '../../../assets/desk.jpg'
+import Down from '../../../assets/down.svg'
+import Wifi from '../../../assets/wifi.svg'
+import Air from '../../../assets/air-conditioning.svg'
+import Printer from '../../../assets/printer.svg'
+import Coffee from '../../../assets/coffee.svg'
+import Flextime from '../../../assets/flex.svg'
+import Spray from '../../../assets/spray.svg'
 
 export default function Coworking () {
   const BANNER_TEXT = 'COWORKING'
@@ -22,72 +28,223 @@ export default function Coworking () {
         description={BANNER_DESCRIPTION}
       />
       <div className='flex flex-col w-full h-full px-[50px] 2xl:px-[90px]'>
-        <section id='amenidades' className='flex flex-col w-full h-full py-[65px]'>
-          <div className='w-full h-full border'>
-            <Carousel
-              showThumbs={false}
-              showStatus={false}
-              infiniteLoop
-              interval={3000}
-              autoPlay
-            >
-              <div className='w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]'>
-                <Image
-                  className='w-full h-full object-cover object-center'
-                  width={1600}
-                  height={1066}
-                  alt=''
-                  src={Desk}
-                  priority
-                />
-                {/* <p className="legend">Legend 1</p> */}
+        <section id='accesos' className='flex flex-col w-full h-full py-[65px]'>
+          <div className='flex flex-col w-full justify-center items-start gap-14 text-[#142e38]'>
+            <div className='w-full flex flex-col justify-center items-start gap-8'>
+              <p className='text-[22px]'>Contamos con 4 tipos de acceso al Coworking</p>
+              <p className='text-[18px] font-light'>Nos adaptamos a tus necesidades</p>
+            </div>
+            <div className='w-full h-full flex justify-between items-center gap-10'>
+              <div className='w-[250px] h-[240px] border border-[#142e38] rounded-[10px] flex flex-col justify-start items-center text-[#142e38]'>
+                <h2 className='text-[22px] bg-[#142e38] text-[#f0fbfb] w-full h-auto p-1.5 pl-2 self-start rounded-t-lg'>Acceso por hora</h2>
+                <p className='p-2.5 text-[18px]'>Aprovecha al máximo cada minuto de tu tiempo, pagando solo por las horas que necesitas.</p>
               </div>
-              <div className='w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]'>
-                <Image
-                  className='w-full h-full object-cover object-center'
-                  width={1600}
-                  height={1066}
-                  alt=''
-                  src={Desk}
-                />
-                {/* <p className="legend">Legend 2</p> */}
+              <div className='w-[250px] h-[240px] border border-[#142e38] rounded-[10px] flex flex-col justify-start items-center text-[#142e38]'>
+                <h2 className='text-[22px] bg-[#142e38] text-[#f0fbfb] w-full h-auto p-1.5 pl-2 self-start rounded-t-lg'>Acceso Daypass</h2>
+                <p className='p-2.5 text-[18px]'>Experimenta todo lo que nuestro coworking tiene para ofrecer en un solo día, sin compromisos a largo plazo.</p>
               </div>
-              <div className='w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]'>
-                <Image
-                  className='w-full h-full object-cover object-center'
-                  width={1600}
-                  height={1066}
-                  alt=''
-                  src={Desk}
-                />
-                {/* <p className="legend">Legend 3</p> */}
+              <div className='w-[250px] h-[240px] border border-[#142e38] rounded-[10px] flex flex-col justify-start items-center text-[#142e38]'>
+                <h2 className='text-[22px] bg-[#142e38] text-[#f0fbfb] w-full h-auto p-1.5 pl-2 self-start rounded-t-lg'>Acceso por semana</h2>
+                <p className='p-2.5 text-[18px]'>Únete a nuestra comunidad durante una semana completa y descubre el poder de trabajar en un entorno dinámico y profesional.</p>
               </div>
-            </Carousel>
+              <div className='w-[250px] h-[240px] border border-[#142e38] rounded-[10px] flex flex-col justify-start items-center text-[#142e38]'>
+                <h2 className='text-[22px] bg-[#142e38] text-[#f0fbfb] w-full h-auto p-1.5 pl-2 self-start rounded-t-lg'>Acceso por mes</h2>
+                <p className='p-2.5 text-[18px]'>Obtén una membresía completa que te brinda la libertad de trabajar en nuestro coworking durante todo el mes.</p>
+              </div>
+            </div>
           </div>
-          <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] mb-[50px]'>
-            <p className='text-[22px]'>¿Qué incluye?</p>
-            <ul>
-              <li>Equipo cómodo</li>
-              <li>Internet de alta velocidad</li>
-              <li>Limpieza</li>
-              <li>Aire acondicionado</li>
-              <li>Coffee break sencillo</li>
-              <li>Flextime</li>
-              <li>Centro de copiado → costo extra</li>
-            </ul>
-            {/* <Tabs className='w-full'>
-              <TabList>
-                <Tab>Title 1</Tab>
-                <Tab>Title 2</Tab>
-              </TabList>
-
-              <TabPanel>
-                <h2>Any content 1</h2>
-              </TabPanel>
-              <TabPanel>
-                <h2>Any content 2</h2>
-              </TabPanel>
-            </Tabs> */}
+        </section>
+        <section className='flex flex-col w-full h-full justify-center items-start gap-10'>
+          <p className='text-[22px]'>¿Qué incluye?</p>
+          <div className='flex w-full h-full justify-between items-start gap-8'>
+            <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] self-start'>
+              <section id='amenidades' className='w-full mx-auto'>
+                <div className='overflow-hidden'>
+                  {/* <!-- accordion-tab  --> */}
+                  <div className='group outline-none accordion-section' tabIndex='1'>
+                    <div className='group border border-[#142e38] border-b-0 rounded-t-xl flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
+                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                        <div className='w-full h-full flex justify-start items-center gap-4'>
+                          <span className='size-auto flex justify-center items-center'>
+                            <Image src={Wifi} alt='Wifi icon' className='size-[40px]' width='auto' />
+                          </span>
+                          <h2>
+                            Internet de alta velocidad
+                          </h2>
+                        </div>
+                        <span className='size-auto items-center h-full inline-flex justify-center transform transition ease duration-500 group-focus:text-white group-focus:-rotate-180 absolute top-0 right-0 mb-auto ml-auto mt-0 mr-2'>
+                          <Image src={Down} alt='Arrow Icon' className='size-[36px]' width='auto' />
+                        </span>
+                      </div>
+                    </div>
+                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
+                      <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
+                        Conéctate sin interrupciones y lleva a cabo tus tareas con eficiencia gracias a nuestra conexión a Internet de alta velocidad.
+                      </p>
+                    </div>
+                  </div>
+                  {/* <!-- accordion-tab --> */}
+                  {/* <!-- accordion-tab  --> */}
+                  <div className='group outline-none accordion-section' tabIndex='2'>
+                    <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
+                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                        <div className='w-full h-full flex justify-start items-center gap-4'>
+                          <span className='size-auto flex justify-center items-center'>
+                            <Image src={Air} alt='Air icon' className='size-[40px]' width='auto' />
+                          </span>
+                          <h2>
+                            Espacios climatizados
+                          </h2>
+                        </div>
+                        <span className='size-auto items-center h-full inline-flex justify-center transform transition ease duration-500 group-focus:text-white group-focus:-rotate-180 absolute top-0 right-0 mb-auto ml-auto mt-0 mr-2'>
+                          <Image src={Down} alt='Arrow Icon' className='size-[36px]' width='auto' />
+                        </span>
+                      </div>
+                    </div>
+                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
+                      <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
+                        Trabaja en un ambiente cómodo y agradable durante todo el año, gracias a nuestro sistema de climatización que garantiza una temperatura óptima en todo momento.
+                      </p>
+                    </div>
+                  </div>
+                  {/* <!-- accordion-tab --> */}
+                  {/* <!-- accordion-tab  --> */}
+                  <div className='group outline-none accordion-section' tabIndex='3'>
+                    <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
+                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                        <div className='w-full h-full flex justify-start items-center gap-4'>
+                          <span className='size-auto flex justify-center items-center'>
+                            <Image src={Printer} alt='Printer icon' className='size-[40px]' width='auto' />
+                          </span>
+                          <h2>
+                            Centro de copiado y escaneo *
+                          </h2>
+                        </div>
+                        <span className='size-auto items-center h-full inline-flex justify-center transform transition ease duration-500 group-focus:text-white group-focus:-rotate-180 absolute top-0 right-0 mb-auto ml-auto mt-0 mr-2'>
+                          <Image src={Down} alt='Arrow Icon' className='size-[36px]' width='auto' />
+                        </span>
+                      </div>
+                    </div>
+                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
+                      <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
+                        Simplifica tus tareas administrativas con nuestro centro de copiado y escaneo. <span className='font-semibold'>*Disponible con costo extra</span>
+                      </p>
+                    </div>
+                  </div>
+                  {/* <!-- accordion-tab --> */}
+                  {/* <!-- accordion-tab  --> */}
+                  <div className='group outline-none accordion-section' tabIndex='4'>
+                    <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
+                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                        <div className='w-full h-full flex justify-start items-center gap-4'>
+                          <span className='size-auto flex justify-center items-center'>
+                            <Image src={Coffee} alt='Coffee icon' className='size-[40px]' width='auto' />
+                          </span>
+                          <h2>
+                            Coffee Break sencillo
+                          </h2>
+                        </div>
+                        <span className='size-auto items-center h-full inline-flex justify-center transform transition ease duration-500 group-focus:text-white group-focus:-rotate-180 absolute top-0 right-0 mb-auto ml-auto mt-0 mr-2'>
+                          <Image src={Down} alt='Arrow Icon' className='size-[36px]' width='auto' />
+                        </span>
+                      </div>
+                    </div>
+                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
+                      <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
+                        Toma un descanso y recarga energías en nuestras áreas comunes diseñadas para el relax, donde podrás disfrutar de un café o socializar con otros miembros de la comunidad.
+                      </p>
+                    </div>
+                  </div>
+                  {/* <!-- accordion-tab --> */}
+                  {/* <!-- accordion-tab  --> */}
+                  <div className='group outline-none accordion-section' tabIndex='5'>
+                    <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
+                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                        <div className='w-full h-full flex justify-start items-center gap-4'>
+                          <span className='size-auto flex justify-center items-center'>
+                            <Image src={Flextime} alt='Flextime icon' className='size-[40px]' width='auto' />
+                          </span>
+                          <h2>
+                            Flextime
+                          </h2>
+                        </div>
+                        <span className='size-auto items-center h-full inline-flex justify-center transform transition ease duration-500 group-focus:text-white group-focus:-rotate-180 absolute top-0 right-0 mb-auto ml-auto mt-0 mr-2'>
+                          <Image src={Down} alt='Arrow Icon' className='size-[36px]' width='auto' />
+                        </span>
+                      </div>
+                    </div>
+                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
+                      <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
+                        Elige libremente cuándo comenzar y terminar su jornada laboral, brindando una mayor autonomía y flexibilidad para equilibrar la vida personal y profesional.
+                      </p>
+                    </div>
+                  </div>
+                  {/* <!-- accordion-tab --> */}
+                  {/* <!-- accordion-tab  --> */}
+                  <div className='group outline-none accordion-section' tabIndex='6'>
+                    <div className='group border border-[#142e38] rounded-b-xl group-focus:rounded-none group-focus:border-b-0 flex justify-between px-4 py-3 items-center transition-all ease-out duration-500 cursor-pointer pr-10 relative'>
+                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                        <div className='w-full h-full flex justify-start items-center gap-4'>
+                          <span className='size-auto flex justify-center items-center'>
+                            <Image src={Spray} alt='Spray icon' className='size-[40px]' width='auto' />
+                          </span>
+                          <h2>
+                            Limpieza y mantenimiento
+                          </h2>
+                        </div>
+                        <span className='size-auto items-center h-full inline-flex justify-center transform transition ease duration-500 group-focus:text-white group-focus:-rotate-180 absolute top-0 right-0 mb-auto ml-auto mt-0 mr-2'>
+                          <Image src={Down} alt='Arrow Icon' className='size-[36px]' width='auto' />
+                        </span>
+                      </div>
+                    </div>
+                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x group-focus:border-b border-[#142e38] rounded-b-xl px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
+                      <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
+                        Garantizamos un ambiente limpio, ordenado y seguro para que los profesionales puedan trabajar de manera productiva y cómoda.
+                      </p>
+                    </div>
+                  </div>
+                  {/* <!-- accordion-tab --> */}
+                </div>
+              </section>
+            </div>
+            <div className='w-full h-full border border-[#142e38]'>
+              <Carousel
+                showThumbs={false}
+                showStatus={false}
+                infiniteLoop
+                interval={3000}
+                autoPlay
+              >
+                <div className='w-full h-[390px] flex justify-center items-center'>
+                  <Image
+                    className='w-full h-full object-cover object-center'
+                    height='auto'
+                    alt=''
+                    src={Desk}
+                    priority
+                  />
+                  <p className='absolute bottom-8 rounded-lg py-1.5 px-6 bg-[#142e38] text-[#f0fbfb]'>Espacio 1</p>
+                </div>
+                <div className='w-full h-[390px] flex justify-center items-center'>
+                  <Image
+                    className='w-full h-full object-cover object-center'
+                    height='auto'
+                    alt=''
+                    src={Desk}
+                  />
+                  <p className='absolute bottom-8 rounded-lg py-1.5 px-6 bg-[#142e38] text-[#f0fbfb]'>Espacio 2</p>
+                </div>
+                <div className='w-full h-[390px] flex justify-center items-center'>
+                  <Image
+                    className='w-full h-full object-cover object-center'
+                    height='auto'
+                    alt=''
+                    src={Desk}
+                  />
+                  <p className='absolute bottom-8 rounded-lg py-1.5 px-6 bg-[#142e38] text-[#f0fbfb]'>Espacio 3</p>
+                </div>
+              </Carousel>
+            </div>
           </div>
         </section>
       </div>
