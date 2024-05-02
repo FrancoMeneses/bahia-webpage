@@ -34,7 +34,7 @@ export const Footer = () => {
           <Link href='/espacios/oficina-privada' className='text-[18px] font-light hover:underline hover:underline-offset-2'>OFICINA PRIVADA</Link>
           <Link href='/espacios/oficina-virtual' className='text-[18px] font-light hover:underline hover:underline-offset-2'>OFICINA VIRTUAL</Link>
           <Link href='/espacios/sala-juntas' className='text-[18px] font-light hover:underline hover:underline-offset-2'>SALA DE JUNTAS</Link>
-          <Link href='/espacios/sala-capacitacion' className='text-[18px] font-light hover:underline hover:underline-offset-2'>SALA DE CAPACITACIÓN</Link>
+          <Link href='/espacios/sala-training' className='text-[18px] font-light hover:underline hover:underline-offset-2'>SALA DE CAPACITACIÓN</Link>
         </ul>
         <div className='flex flex-col w-full h-full justify-between items-center gap-3'>
           <ul className='w-full flex flex-col justify-center items-start gap-3'>

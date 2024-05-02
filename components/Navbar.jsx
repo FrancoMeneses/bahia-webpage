@@ -16,8 +16,8 @@ export const Navbar = () => {
 
   return (
     <header className='w-full h-[120px] flex justify-center items-center'>
-      <div className='w-full h-full px-3 md:px-[50px] 2xl:px-[90px] flex justify-between items-center'>
-        <Link href='/' className='w-full md:w-[11%] h-full flex justify-start items-center'>
+      <div className='w-full h-full px-3 md:px-[50px] 2xl:px-[90px] flex justify-between items-center border'>
+        <Link href='/' className='w-[33%] md:w-[11%] h-full flex justify-start items-center'>
           <Image src={Logo} alt='Bahía Business Center Logo' className='w-[80px] md:h-[90px] md:w-[145px]' />
         </Link>
         <ul className='hidden md:flex w-auto h-full flex-grow justify-center items-center gap-8 text-[20px] font-light'>
@@ -41,12 +41,12 @@ export const Navbar = () => {
             <Link href={hasNav() ? `${pathname}#contacto` : '/#contacto'}>CONTACTO</Link>
           </li>
         </ul>
-        <div className='w-full md:w-[11%] h-full flex justify-end items-center'>
-          <button type='button' className='w-auto px-4 md:p-0 md:w-full h-[45px] text-[16px] md:text-[18px] bg-[#2c8093] text-white rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'>Cotizar ahora</button>
+        <div className='w-[33%] md:w-[11%] h-full flex justify-end items-center'>
+          <button type='button' className='w-auto px-4 md:p-0 md:w-full h-[45px] text-[13px] md:text-[18px] bg-[#2c8093] text-white rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'>Cotizar ahora</button>
         </div>
 
-        <button>
-          <Image src={MenuIcon} />
+        <button className='md:hidden w-[33%] flex justify-end items-center h-full'>
+          <Image src={MenuIcon} alt='Menu Icon' className='w-[40px]' />
         </button>
 
       </div>

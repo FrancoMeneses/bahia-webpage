@@ -1,11 +1,6 @@
-'use client'
-
 import { BannerEspacios } from '@/components/BannerEspacios'
 import { ContactForm } from '@/components/Form'
-import 'react-tabs/style/react-tabs.css'
-import { Carousel } from 'react-responsive-carousel'
 import Image from 'next/image'
-import Desk from '../../../assets/desk.jpg'
 import Down from '../../../assets/down.svg'
 import Wifi from '../../../assets/wifi.svg'
 import Air from '../../../assets/air-conditioning.svg'
@@ -14,10 +9,23 @@ import Coffee from '../../../assets/coffee.svg'
 import Flextime from '../../../assets/flex.svg'
 import Spray from '../../../assets/spray.svg'
 import Silla from '../../../assets/silla.svg'
+import { CustomCarousel } from '@/components/Carousel'
 
 export default function Coworking () {
   const BANNER_TEXT = 'COWORKING'
   const BANNER_DESCRIPTION = 'Área de trabajo que permite a los profesionales compartir un mismo espacio y creaciones de networking'
+  const carouselImages = [{
+    image: 'https://placehold.co/600x400',
+    description: 'Lugar 1'
+  },
+  {
+    image: 'https://placehold.co/600x400',
+    description: 'Lugar 2'
+  },
+  {
+    image: 'https://placehold.co/600x400',
+    description: 'Lugar 3'
+  }]
 
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
@@ -233,42 +241,7 @@ export default function Coworking () {
               </section>
             </div>
             <div className='w-full h-full border border-[#142e38]'>
-              <Carousel
-                showThumbs={false}
-                showStatus={false}
-                infiniteLoop
-                interval={3000}
-                autoPlay
-              >
-                <div className='w-full h-[450px] flex justify-center items-center'>
-                  <Image
-                    className='w-full h-full object-cover object-center'
-                    height='auto'
-                    alt=''
-                    src={Desk}
-                    priority
-                  />
-                  <p className='absolute bottom-8 rounded-lg py-1.5 px-6 bg-[#142e38] text-[#f0fbfb]'>Espacio 1</p>
-                </div>
-                <div className='w-full h-[450px] flex justify-center items-center'>
-                  <Image
-                    className='w-full h-full object-cover object-center'
-                    height='auto'
-                    alt=''
-                    src={Desk}
-                  />
-                  <p className='absolute bottom-8 rounded-lg py-1.5 px-6 bg-[#142e38] text-[#f0fbfb]'>Espacio 2</p>
-                </div>
-                <div className='w-full h-[450px] flex justify-center items-center'>
-                  <Image
-                    className='w-full h-full object-cover object-center'
-                    height='auto'
-                    alt=''
-                    src={Desk}
-                  />
-                  <p className='absolute bottom-8 rounded-lg py-1.5 px-6 bg-[#142e38] text-[#f0fbfb]'>Espacio 3</p>
-                </div>
-              </Carousel>
+              <CustomCarousel elements={carouselImages} height='h-[450px]' />
             </div>
           </div>
         </section>

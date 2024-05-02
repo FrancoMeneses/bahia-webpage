@@ -1,11 +1,6 @@
-'use client'
-
 import { BannerEspacios } from '@/components/BannerEspacios'
 import { ContactForm } from '@/components/Form'
-import 'react-tabs/style/react-tabs.css'
-import { Carousel } from 'react-responsive-carousel'
 import Image from 'next/image'
-import Desk from '../../../assets/desk.jpg'
 import Down from '../../../assets/down.svg'
 import Wifi from '../../../assets/wifi.svg'
 import Air from '../../../assets/air-conditioning.svg'
@@ -15,11 +10,24 @@ import Silla from '../../../assets/silla.svg'
 import Spray from '../../../assets/spray.svg'
 import Tv from '../../../assets/tv.svg'
 import Camera from '../../../assets/camera.svg'
+import { CustomCarousel } from '@/components/Carousel'
 
 export default function SalaTraining () {
   const BANNER_TEXT = 'SALA DE CAPACITACIÓN'
   const BANNER_SUBTITLE = '(TRAINING ROOM)'
   const BANNER_DESCRIPTION = 'Espacio ideal multifuncional adecuado para la impartición de  cursos, talleres, conferencias e incluso diplomados con una capacidad de hasta 16 personas'
+  const carouselImages = [{
+    image: 'https://placehold.co/600x400',
+    description: 'Lugar 1'
+  },
+  {
+    image: 'https://placehold.co/600x400',
+    description: 'Lugar 2'
+  },
+  {
+    image: 'https://placehold.co/600x400',
+    description: 'Lugar 3'
+  }]
 
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
@@ -248,42 +256,7 @@ export default function SalaTraining () {
               </section>
             </div>
             <div className='w-full h-full border border-[#142e38]'>
-              <Carousel
-                showThumbs={false}
-                showStatus={false}
-                infiniteLoop
-                interval={3000}
-                autoPlay
-              >
-                <div className='w-full h-[520px] flex justify-center items-center'>
-                  <Image
-                    className='w-full h-full object-cover object-center'
-                    height='auto'
-                    alt=''
-                    src={Desk}
-                    priority
-                  />
-                  <p className='absolute bottom-8 rounded-lg py-1.5 px-6 bg-[#142e38] text-[#f0fbfb]'>Espacio 1</p>
-                </div>
-                <div className='w-full h-[520px] flex justify-center items-center'>
-                  <Image
-                    className='w-full h-full object-cover object-center'
-                    height='auto'
-                    alt=''
-                    src={Desk}
-                  />
-                  <p className='absolute bottom-8 rounded-lg py-1.5 px-6 bg-[#142e38] text-[#f0fbfb]'>Espacio 2</p>
-                </div>
-                <div className='w-full h-[520px] flex justify-center items-center'>
-                  <Image
-                    className='w-full h-full object-cover object-center'
-                    height='auto'
-                    alt=''
-                    src={Desk}
-                  />
-                  <p className='absolute bottom-8 rounded-lg py-1.5 px-6 bg-[#142e38] text-[#f0fbfb]'>Espacio 3</p>
-                </div>
-              </Carousel>
+              <CustomCarousel elements={carouselImages} />
             </div>
           </div>
         </section>

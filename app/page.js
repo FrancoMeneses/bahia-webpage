@@ -22,7 +22,7 @@ export default function Home () {
         link='/ubicacion#mapa'
       />
       <div className='flex flex-col w-full h-full px-[50px] 2xl:px-[90px]'>
-        <section id='inicio-espacios' className='flex flex-col w-full h-full border py-[65px]'>
+        <section id='inicio-espacios' className='flex flex-col w-full h-full py-[65px]'>
           <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] mb-[50px]'>
             <p className='text-[22px]'>Estamos comprometidos a proporcionarte el ambiente<br /> ideal para que tu negocio prospere</p>
             <p className='text-[18px] font-light'>Ecosistema completo diseñado para satisfacer todas tus necesidades<br /> profesionales.</p>
@@ -53,7 +53,7 @@ export default function Home () {
                 image={ServiceCover}
                 title='Sala de juntas'
                 text='Espacio designado específicamente para reuniones, presentaciones y discusiones entre equipos, clientes o socios comerciales, con tecnología audiovisual para facilitar la
-                comunicación efectiva y la colaboración durante las reuniones. Ofrece a los miembros un lugar adecuado para reunirse y trabajar en equipo, fortaleciendo así la productividad y la eficiencia.'
+                comunicación efectiva y la colaboración durante las reuniones.'
                 height='h-auto'
                 width='w-full'
                 link='/espacios/sala-juntas'
@@ -62,7 +62,7 @@ export default function Home () {
                 image={ServiceCover}
                 title='Sala de capacitación (Training Room)'
                 text='La atmósfera tranquila y profesional de la sala de capacitación la convierte en el lugar perfecto para sumergirse en el aprendizaje y la reflexión. Ya sea para una sesión de capacitación intensiva,
-                un taller interactivo o una reunión estratégica, nuestro espacio está diseñado para satisfacer todas tus necesidades de desarrollo profesional.'
+                un taller interactivo o una reunión estratégica.'
                 height='h-auto'
                 width='w-full'
                 link='/espacios/sala-capacitacion'

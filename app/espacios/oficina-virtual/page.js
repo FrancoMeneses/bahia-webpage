@@ -11,8 +11,8 @@ import Spray from '../../../assets/spray.svg'
 import Tv from '../../../assets/tv.svg'
 import { CustomCarousel } from '@/components/Carousel'
 
-export default function SalaJuntas () {
-  const BANNER_TEXT = 'SALA DE JUNTAS'
+export default function OficinaVirtual () {
+  const BANNER_TEXT = 'OFICINA VIRTUAL'
   const BANNER_DESCRIPTION = 'Área multiusos designada donde se puede tener reuniones laborales o extraordinarias, así como también ponencias y pláticas de negocios'
   const carouselImages = [{
     image: 'https://placehold.co/600x400',
@@ -36,21 +36,7 @@ export default function SalaJuntas () {
         text={BANNER_TEXT}
         description={BANNER_DESCRIPTION}
       />
-      <div className='flex flex-col w-full h-full px-[50px] 2xl:px-[90px]'>
-        <section id='accesos' className='flex flex-col w-full h-full py-[65px]'>
-          <div className='flex flex-col w-full justify-center items-start gap-14 text-[#142e38]'>
-            <div className='w-full flex flex-col justify-center items-start gap-8'>
-              <p className='text-[22px]'>Contamos con 1 plan para la sala de juntas</p>
-              <p className='text-[18px] font-light'>Nos adaptamos a tus necesidades</p>
-            </div>
-            <div className='w-full h-full flex justify-between items-center gap-10'>
-              <div className='w-[250px] h-[240px] border border-[#142e38] rounded-[10px] flex flex-col justify-start items-center text-[#142e38]'>
-                <h2 className='text-[22px] bg-[#142e38] text-[#f0fbfb] w-full h-auto p-1.5 pl-2 self-start rounded-t-lg'>Acceso por hora</h2>
-                <p className='p-2.5 text-[18px]'>Aprovecha al máximo cada minuto de tu tiempo, pagando solo por las horas que necesitas.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <div className='flex flex-col w-full h-full px-[50px] 2xl:px-[90px] py-[65px]'>
         <section className='flex flex-col w-full h-full justify-center items-start gap-10'>
           <p className='text-[22px]'>¿Qué incluye?</p>
           <div className='flex w-full h-full justify-between items-start gap-8'>
@@ -234,7 +220,7 @@ export default function SalaJuntas () {
           </div>
         </section>
       </div>
-      <section id='contacto' className='border-y-2 border-[#142e38] mt-[65px] w-full'>
+      <section id='contacto' className='border-y-2 border-[#142e38] w-full'>
         <ContactForm />
       </section>
     </main>
