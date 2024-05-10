@@ -6,6 +6,7 @@ import Desk from '../assets/desk.jpg'
 import { ContactForm } from '@/components/Form'
 import Pana from '../assets/pana.svg'
 import Link from 'next/link'
+import { SliderMobile } from '@/components/SliderMobile'
 
 export default function Home () {
   const BANNER_TEXT = 'Bienvenido a la capital del caribe mexicano, la mejor opción para un centro de negocio.'
@@ -13,7 +14,7 @@ export default function Home () {
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
       <Banner
-        height='h-[418px]'
+        height='h-[200px] md:h-[418px]'
         width='w-full'
         bgColor='bg-[#296675]/10'
         text={BANNER_TEXT}
@@ -21,13 +22,16 @@ export default function Home () {
         image={Pana}
         link='/ubicacion#mapa'
       />
-      <div className='flex flex-col w-full h-full px-[50px] 2xl:px-[90px]'>
-        <section id='inicio-espacios' className='flex flex-col w-full h-full py-[65px]'>
+      <div className='flex flex-col w-full h-full px-4 md:px-[50px] 2xl:px-[90px]'>
+        <section id='inicio-espacios' className='flex flex-col w-full h-full py-[20px] md:py-[65px]'>
           <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] mb-[50px]'>
             <p className='text-[22px]'>Estamos comprometidos a proporcionarte el ambiente<br /> ideal para que tu negocio prospere</p>
             <p className='text-[18px] font-light'>Ecosistema completo diseñado para satisfacer todas tus necesidades<br /> profesionales.</p>
           </div>
-          <div className='flex flex-col w-full h-full justify-center items-center gap-[65px]'>
+          <div className='md:hidden'>
+            <SliderMobile />
+          </div>
+          <div className='hidden md:flex flex-col w-full h-full justify-center items-center gap-[65px]'>
             <div className='flex justify-between items-center w-full h-full'>
               <ServiceCard
                 image={ServiceCover}
@@ -71,19 +75,23 @@ export default function Home () {
           </div>
         </section>
       </div>
-      <section id='inicio-guia' className='bg-[#142e38] h-[400px] w-full flex justify-between items-center text-white'>
-        <div className='h-full w-[45%] flex'>
+      <section id='inicio-guia' className='bg-[#142e38] h-[300px] md:h-[400px] mt-[50px] md:mt-0 w-full flex justify-between items-center text-white'>
+        <div className='h-full w-[45%] hidden md:flex'>
           <Image src={Desk} alt='Desk image' width='auto' height='auto' />
         </div>
-        <div className='flex flex-col h-full w-[55%] justify-evenly items-center'>
-          <p className='text-[20px]'>
+        <div className='flex flex-col h-full w-full py-4 px-4 md:p-0 md:w-[55%] justify-evenly items-center'>
+          <p className='hidden md:block text-[20px]'>
             Recuerda que elegir el espacio adecuado es fundamental<br /> para tu éxito profesional.
             Tómate el tiempo necesario<br /> para explorar tus opciones y encontrar el espacio que se<br /> adapte mejor a tus necesidades y objetivos.
           </p>
-          <span className='text-center text-[22px] font-semibold'>
+          <p className='text-[16px] text-justify md:hidden'>
+            Recuerda que elegir el espacio adecuado es fundamental para tu éxito profesional.
+            Tómate el tiempo necesario para explorar tus opciones y encontrar el espacio que se adapte mejor a tus necesidades y objetivos.
+          </p>
+          <span className='text-center text-[18px] md:text-[22px] font-semibold'>
             ¡Tu futuro profesional comienza aquí!
           </span>
-          <Link href='/espacios#guia' className='w-auto h-auto py-1.5 px-3 text-[20px] bg-[#f0fbfb] text-[#142e38] rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'>
+          <Link href='/espacios#guia' className='w-auto h-auto py-1.5 px-3 text-[18px] md:text-[20px] bg-[#f0fbfb] text-[#142e38] rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'>
             Guía para escoger espacio
           </Link>
         </div>

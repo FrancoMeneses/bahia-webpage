@@ -20,6 +20,12 @@ body {
 .react-tabs__tab--selected {
   background: #142e38 !important;
   color: #F5F5F5 !important;
+  border: 3px solid #2c8093 !important;
+  border-bottom: 0px !important;
+}
+
+.react-tabs__tab {
+  padding-inline: 50px !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

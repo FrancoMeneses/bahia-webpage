@@ -7,9 +7,9 @@ import * as Yup from 'yup'
 
 export const ContactForm = () => {
   return (
-    <div className='h-auto w-full py-10 px-[50px] 2xl:px-[90px] flex justify-between items-center'>
-      <div className='flex w-[50%] justify-center items-center h-full'>
-        <div className='w-[445px] h-full flex flex-col justify-center items-center gap-[40px]'>
+    <div className='h-auto w-full py-10 px-8 md:px-[50px] 2xl:px-[90px] flex flex-col md:flex-row  justify-between items-center'>
+      <div className='flex w-full md:w-[50%] justify-center items-center h-full'>
+        <div className='w-full md:w-[445px] h-full flex flex-col justify-center items-center gap-[40px]'>
           <h2 className='text-[24px] text-[#142e38]'>Cotiza ahora tu nuevo espacio</h2>
           <Formik
             initialValues={{ nombre: '', apellido: '', email: '', telefono: '', mensaje: '' }}
@@ -34,7 +34,7 @@ export const ContactForm = () => {
             }}
           >
             <Form className='w-full h-auto flex flex-col justify-start items-center gap-[30px]'>
-              <div className='flex w-full justify-center gap-7 items-start'>
+              <div className='flex flex-col md:flex-row w-full justify-center gap-7 items-start'>
                 <div className='flex flex-col w-full'>
                   <label htmlFor='nombre' className='text-[#142e38] text-[16px]'>Nombre *</label>
                   <Field name='nombre' type='text' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
@@ -47,7 +47,7 @@ export const ContactForm = () => {
                 </div>
               </div>
 
-              <div className='flex w-full justify-center gap-7 items-start'>
+              <div className='flex w-full flex-col md:flex-row justify-center gap-7 items-start'>
                 <div className='flex flex-col w-full'>
                   <label htmlFor='email' className='text-[#142e38] text-[16px]'>Email *</label>
                   <Field name='email' type='email' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
@@ -66,12 +66,12 @@ export const ContactForm = () => {
                 <ErrorMessage name='mensaje' component='p' className='text-red-500' />
               </div>
 
-              <button type='submit' className='w-auto h-auto py-1.5 px-8 text-[16px] bg-[#142e38] text-[#f0fbfb] rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'>Enviar</button>
+              <button type='submit' className='w-auto h-auto py-1.5 px-11 md:px-8 text-[16px] bg-[#142e38] text-[#f0fbfb] rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'>Enviar</button>
             </Form>
           </Formik>
         </div>
       </div>
-      <div className='h-full w-[50%] flex justify-center items-center'>
+      <div className='h-full w-full md:w-[50%] flex justify-center items-center'>
         <Image src={ImageForm} alt='Image form' width='auto' height='auto' />
       </div>
     </div>

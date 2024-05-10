@@ -53,9 +53,9 @@ export default function SalaJuntas () {
         </section>
         <section className='flex flex-col w-full h-full justify-center items-start gap-10'>
           <p className='text-[22px]'>¿Qué incluye?</p>
-          <div className='flex w-full h-full justify-between items-start gap-8'>
-            <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] self-start'>
-              <section id='amenidades-juntas' className='w-full mx-auto'>
+          <div className='flex flex-col w-full h-full justify-between items-start gap-10'>
+            <div className='flex w-full justify-start items-start gap-8 text-[#142e38] self-start'>
+              <section id='amenidades-juntas' className='w-[65%] mx-auto'>
                 <div className='overflow-hidden'>
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='1'>
@@ -228,8 +228,11 @@ export default function SalaJuntas () {
                 </div>
               </section>
             </div>
-            <div className='w-full h-full border border-[#142e38]'>
-              <CustomCarousel elements={carouselImages} />
+            <div className='w-full flex flex-col gap-10'>
+              <h2 className='text-[22px]'>Instalaciones</h2>
+              <div className='w-full h-full border border-[#142e38]'>
+                <CustomCarousel elements={carouselImages} height='h-[450px]' />
+              </div>
             </div>
           </div>
         </section>

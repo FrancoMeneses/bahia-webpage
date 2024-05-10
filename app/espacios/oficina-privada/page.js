@@ -35,10 +35,13 @@ export default function OficinaPrivada () {
               <p className='text-[22px]'>Contamos con 3 tipos de membresía para Oficina privada</p>
               <p className='text-[18px] font-light'>Nos adaptamos a tus necesidades</p>
             </div>
-            <div className='w-full h-full flex justify-center items-start gap-7'>
+            <div className='w-full h-full flex flex-col justify-center items-start gap-10'>
               <TabsPrivada />
-              <div className='w-full min-h-full border border-[#142e38]'>
-                <CustomCarousel elements={carouselImages} height='h-[530px]' />
+              <div className='w-full flex flex-col gap-10'>
+                <h2 className='text-[22px]'>Instalaciones</h2>
+                <div className='w-full min-h-full border border-[#142e38]'>
+                  <CustomCarousel elements={carouselImages} height='h-[530px]' />
+                </div>
               </div>
             </div>
           </div>

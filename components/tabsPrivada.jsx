@@ -27,7 +27,7 @@ export const TabsPrivada = () => {
           <p className='text-[22px]'>¿Qué incluye?</p>
           <div className='flex w-full h-full justify-between items-start gap-8'>
             <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] self-start'>
-              <section id='amenidades-bahia' className='w-full mx-auto'>
+              <section id='amenidades-bahia' className='w-[65%] mx-auto'>
                 <div className='overflow-hidden'>
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='1'>
@@ -118,7 +118,7 @@ export const TabsPrivada = () => {
                         </span>
                       </div>
                     </div>
-                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
+                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex justify-start items-center'>
                       <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
                         Simplifica tus tareas administrativas con nuestro centro de copiado y escaneo.
                       </p>
@@ -184,7 +184,7 @@ export const TabsPrivada = () => {
           <p className='text-[22px]'>¿Qué incluye?</p>
           <div className='flex w-full h-full justify-between items-start gap-8'>
             <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] self-start'>
-              <section id='amenidades-plus' className='w-full mx-auto'>
+              <section id='amenidades-plus' className='w-[65%] mx-auto'>
                 <div className='overflow-hidden'>
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='1'>
@@ -299,7 +299,7 @@ export const TabsPrivada = () => {
                         </span>
                       </div>
                     </div>
-                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
+                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex justify-start items-center'>
                       <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
                         Simplifica tus tareas administrativas con nuestro centro de copiado y escaneo.
                       </p>
@@ -365,7 +365,7 @@ export const TabsPrivada = () => {
           <p className='text-[22px]'>¿Qué incluye?</p>
           <div className='flex w-full h-full justify-between items-start gap-8'>
             <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] self-start'>
-              <section id='amenidades-plus' className='w-full mx-auto'>
+              <section id='amenidades-premium' className='w-[65%] mx-auto'>
                 <div className='overflow-hidden'>
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='1'>
@@ -504,7 +504,7 @@ export const TabsPrivada = () => {
                         </span>
                       </div>
                     </div>
-                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
+                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex justify-start items-center'>
                       <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
                         Simplifica tus tareas administrativas con nuestro centro de copiado y escaneo.
                       </p>
