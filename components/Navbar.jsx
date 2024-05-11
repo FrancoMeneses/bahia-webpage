@@ -24,7 +24,7 @@ export const Navbar = () => {
         <Link href='/' className='w-[35%] pl-3 md:w-[11%] h-full flex justify-start items-center'>
           <Image src={Logo} alt='Bahía Business Center Logo' className='w-[80px] md:h-[90px] md:w-[145px]' />
         </Link>
-        <div className={'absolute bg-[#F5F5F5] top-0 w-full md:opacity-100 md:static md:w-auto transition-all duration-300 ease-in-out' + (navbarOpen ? ' mt-[90px] h-auto' : ' opacity-0')}>
+        <div className={'absolute bg-[#F5F5F5] top-0 w-full md:opacity-100 md:static md:w-auto transition-all duration-300 ease-in-out' + (navbarOpen ? ' mt-[90px] h-auto' : ' opacity-0 pointer-events-none')}>
           <ul className='flex flex-col md:flex-row w-auto h-full flex-grow justify-center items-center gap-8 text-[20px] font-light'>
             <li className='hover:text-[#2c8093]'>
               <Link
@@ -104,7 +104,7 @@ export const Navbar = () => {
                   }}
                 />
               </button>
-              <div className={'absolute w-full top-0 transition-all duration-300 ease-in-out' + (espaciosOpen ? ' mt-[50px] h-auto' : ' opacity-0 -z-10')}>
+              <div className={'absolute w-full top-0 transition-all duration-300 ease-in-out' + (espaciosOpen ? ' mt-[50px] h-auto' : ' opacity-0 z-[-999] pointer-events-none')}>
                 <ul className='flex flex-col gap-3 list-inside list-disc bg-[#142e38] text-[#f0fbfb] w-full'>
                   <Link
                     href='/espacios/coworking' onClick={() => {
@@ -172,7 +172,12 @@ export const Navbar = () => {
         <button
           className='text-white cursor-pointer z-10 lg:z-0 pr-3 text-xl leading-none py-1 flex justify-end items-center rounded bg-transparent md:hidden w-[33%] outline-none focus:outline-none'
           type='button'
-          onClick={() => setNavbarOpen(!navbarOpen)}
+          onClick={() => {
+            setNavbarOpen(!navbarOpen)
+            if (!navbarOpen && espaciosOpen) {
+              setEspaciosOpen(false)
+            }
+          }}
         >
           <Image src={MenuIcon} alt='Menu Icon' className='w-[40px]' />
         </button>

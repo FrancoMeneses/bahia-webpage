@@ -27,7 +27,7 @@ export const TabsPrivada = () => {
           <p className='text-[22px]'>¿Qué incluye?</p>
           <div className='flex w-full h-full justify-between items-start gap-8'>
             <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] self-start'>
-              <section id='amenidades-bahia' className='w-[65%] mx-auto'>
+              <section id='amenidades-bahia' className='w-full md:w-[65%] mx-auto'>
                 <div className='overflow-hidden'>
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='1'>
@@ -184,7 +184,7 @@ export const TabsPrivada = () => {
           <p className='text-[22px]'>¿Qué incluye?</p>
           <div className='flex w-full h-full justify-between items-start gap-8'>
             <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] self-start'>
-              <section id='amenidades-plus' className='w-[65%] mx-auto'>
+              <section id='amenidades-plus' className='w-full md:w-[65%] mx-auto'>
                 <div className='overflow-hidden'>
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='1'>
@@ -365,7 +365,7 @@ export const TabsPrivada = () => {
           <p className='text-[22px]'>¿Qué incluye?</p>
           <div className='flex w-full h-full justify-between items-start gap-8'>
             <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] self-start'>
-              <section id='amenidades-premium' className='w-[65%] mx-auto'>
+              <section id='amenidades-premium' className='w-full md:w-[65%] mx-auto'>
                 <div className='overflow-hidden'>
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='1'>

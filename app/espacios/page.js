@@ -11,6 +11,7 @@ import Coffee from '../../assets/coffee.svg'
 import Users from '../../assets/users.svg'
 import Spray from '../../assets/spray.svg'
 import Guia from '../../assets/Guia.svg'
+import { SliderMobile } from '@/components/SliderMobile'
 
 export default function Espacios () {
   const BANNER_TEXT = '¡Ahorra hasta un 30% con nuestras membresías!'
@@ -18,14 +19,14 @@ export default function Espacios () {
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
       <Banner
-        height='h-[350px]'
+        height='h-[200px] md:h-[350px]'
         width='w-full'
         bgColor='bg-[#296675]/10'
         text={BANNER_TEXT}
         buttonText='Obtener información'
         link='#'
       />
-      <div className='flex flex-col w-full h-full px-[50px] 2xl:px-[90px]'>
+      <div className='flex flex-col w-full h-full px-4 md:px-[50px] 2xl:px-[90px]'>
         <section id='amenidades' className='flex flex-col w-full h-full py-[65px]'>
           <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] mb-[50px]'>
             <p className='text-[22px]'>En nuestro innovador espacio, no solo ofrecemos<br /> escritorios y salas de reuniones</p>
@@ -33,7 +34,7 @@ export default function Espacios () {
           </div>
           <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] mb-[50px]'>
             <p className='text-[22px]'>Todos nuestros espacios incluyen</p>
-            <section id='amenidades' className='w-[65%] mx-auto mt-[25px]'>
+            <section id='amenidades' className='w-full md:w-[65%] mx-auto mt-[25px]'>
               <div className='overflow-hidden'>
                 {/* <!-- accordion-tab  --> */}
                 <div className='group outline-none accordion-section' tabIndex='1'>
@@ -43,7 +44,7 @@ export default function Espacios () {
                         <span className='size-auto flex justify-center items-center'>
                           <Image src={Wifi} alt='Wifi icon' className='size-[40px]' width='auto' />
                         </span>
-                        <h2>
+                        <h2 className='text-center'>
                           Internet de alta velocidad
                         </h2>
                       </div>
@@ -63,11 +64,11 @@ export default function Espacios () {
                 <div className='group outline-none accordion-section' tabIndex='2'>
                   <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
                     <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
-                      <div className='w-full h-full flex justify-start items-center gap-4'>
+                      <div className='w-full h-full flex justify-start items-center gap-6 md:gap-4'>
                         <span className='size-auto flex justify-center items-center'>
                           <Image src={Air} alt='Air icon' className='size-[40px]' width='auto' />
                         </span>
-                        <h2>
+                        <h2 className='text-center'>
                           Espacios climatizados
                         </h2>
                       </div>
@@ -91,7 +92,7 @@ export default function Espacios () {
                         <span className='size-auto flex justify-center items-center'>
                           <Image src={Printer} alt='Printer icon' className='size-[40px]' width='auto' />
                         </span>
-                        <h2>
+                        <h2 className='text-center'>
                           Centro de copiado y escaneo
                         </h2>
                       </div>
@@ -111,11 +112,11 @@ export default function Espacios () {
                 <div className='group outline-none accordion-section' tabIndex='4'>
                   <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
                     <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
-                      <div className='w-full h-full flex justify-start items-center gap-4'>
+                      <div className='w-full h-full flex justify-start items-center gap-[70px] md:gap-4'>
                         <span className='size-auto flex justify-center items-center'>
                           <Image src={Coffee} alt='Coffee icon' className='size-[40px]' width='auto' />
                         </span>
-                        <h2>
+                        <h2 className='text-center self-center'>
                           Coffee Break
                         </h2>
                       </div>
@@ -139,7 +140,7 @@ export default function Espacios () {
                         <span className='size-auto flex justify-center items-center'>
                           <Image src={Users} alt='Users icon' className='size-[40px]' width='auto' />
                         </span>
-                        <h2>
+                        <h2 className='text-center'>
                           Recepción y servicios administrativos
                         </h2>
                       </div>
@@ -163,7 +164,7 @@ export default function Espacios () {
                         <span className='size-auto flex justify-center items-center'>
                           <Image src={Spray} alt='Spray icon' className='size-[40px]' width='auto' />
                         </span>
-                        <h2>
+                        <h2 className='text-center'>
                           Limpieza y mantenimiento
                         </h2>
                       </div>
@@ -182,7 +183,7 @@ export default function Espacios () {
               </div>
             </section>
           </div>
-          <div className='flex flex-col w-full h-full justify-center items-center gap-[65px]'>
+          <div className='hidden md:flex flex-col w-full h-full justify-center items-center gap-[65px]'>
             <div className='flex justify-between items-center w-full h-full'>
               <ServiceCard
                 image={ServiceCover}
@@ -208,7 +209,7 @@ export default function Espacios () {
                 image={ServiceCover}
                 title='Sala de juntas'
                 text='Espacio designado específicamente para reuniones, presentaciones y discusiones entre equipos, clientes o socios comerciales, con tecnología audiovisual para facilitar la
-                comunicación efectiva y la colaboración durante las reuniones.'
+                  comunicación efectiva y la colaboración durante las reuniones.'
                 height='h-auto'
                 width='w-full'
                 link='/espacios/sala-juntas'
@@ -217,12 +218,15 @@ export default function Espacios () {
                 image={ServiceCover}
                 title='Sala de capacitación (Training Room)'
                 text='La atmósfera tranquila y profesional de la sala de capacitación la convierte en el lugar perfecto para sumergirse en el aprendizaje y la reflexión. Ya sea para una sesión de capacitación intensiva,
-                un taller interactivo o una reunión estratégica.'
+                  un taller interactivo o una reunión estratégica.'
                 height='h-auto'
                 width='w-full'
                 link='/espacios/sala-capacitacion'
               />
             </div>
+          </div>
+          <div className='md:hidden'>
+            <SliderMobile />
           </div>
         </section>
         <section id='guia' className='w-full flex flex-col justify-between items-center gap-8 text-[#142e38]'>

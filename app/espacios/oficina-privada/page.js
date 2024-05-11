@@ -22,14 +22,14 @@ export default function OficinaPrivada () {
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
       <BannerEspacios
-        height='h-[250px]'
+        height='h-[230px] md:h-[250px]'
         width='w-full'
         bgColor='bg-[#296675]/10'
         text={BANNER_TEXT}
         description={BANNER_DESCRIPTION}
       />
-      <div className='flex flex-col w-full h-full px-[50px] 2xl:px-[90px]'>
-        <section id='membresias' className='flex flex-col w-full h-full py-[65px]'>
+      <div className='flex flex-col w-full h-full px-4 md:px-[50px] 2xl:px-[90px]'>
+        <section id='membresias' className='flex flex-col w-full h-full py-[50px] md:py-[65px]'>
           <div className='flex flex-col h-full w-full justify-center items-start gap-14 text-[#142e38]'>
             <div className='w-full flex flex-col justify-center items-start gap-8'>
               <p className='text-[22px]'>Contamos con 3 tipos de membresía para Oficina privada</p>

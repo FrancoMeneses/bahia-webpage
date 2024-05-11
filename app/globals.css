@@ -28,6 +28,13 @@ body {
   padding-inline: 50px !important;
 }
 
+@media (max-width: 640px) {
+  .react-tabs__tab {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

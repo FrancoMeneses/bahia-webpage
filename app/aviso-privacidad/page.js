@@ -1,6 +1,6 @@
 export default function AvisoDePrivacidad () {
   return (
-    <main className='font-text py-6 px-[50px] 2xl:px-[90px] flex flex-col w-full h-auto gap-4'>
+    <main className='font-text py-6 px-4 md:px-[50px] 2xl:px-[90px] flex flex-col w-full h-auto gap-4'>
       <h1 className='text-center font-bold text-[22px]'>Aviso de Privacidad Integral</h1>
       <div className='text-justify flex flex-col w-full h-full gap-4'>
         <p>

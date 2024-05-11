@@ -12,48 +12,50 @@ export default function Espacios () {
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
       <Banner
-        height='h-[350px]'
+        height='h-[280px] md:h-[350px]'
         width='w-full'
         bgColor='bg-[#296675]/10'
         text={BANNER_TEXT}
         buttonText='Ver ubicación'
         link='/espacios#mapa'
       />
-      <div className='flex flex-col w-full h-full px-[50px] 2xl:px-[90px]'>
-        <section id='ubicacion-estrategica' className='flex flex-col w-full h-full py-[65px]'>
-          <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] mb-[50px]'>
-            <p className='text-[22px]'>Nuestro espacio está estratégicamente ubicado en el<br /> corazón de la ciudad, ofreciéndote una dirección de<br /> prestigio y acceso conveniente a todo lo que necesitas:</p>
+      <div className='flex flex-col w-full h-full px-4 md:px-[50px] 2xl:px-[90px]'>
+        <section id='ubicacion-estrategica' className='flex flex-col w-full h-full py-[50px] md:py-[65px]'>
+          <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] mb-[20px] md:mb-[50px]'>
+            <p className='hidden md:block text-[22px]'>Nuestro espacio está estratégicamente ubicado en el<br /> corazón de la ciudad, ofreciéndote una dirección de<br /> prestigio y acceso conveniente a todo lo que necesitas:</p>
+            <p className='md:hidden text-[22px]'>Nuestro espacio está estratégicamente ubicado en el corazón de la ciudad, ofreciéndote una dirección de prestigio y acceso conveniente a todo lo que necesitas:</p>
           </div>
-          <div className='flex w-full h-[380px] justify-center items-center gap-8 text-[#142e38] mb-[50px]'>
-            <ul className='list-disc list-inside flex flex-col h-full w-[50%] justify-between items-center'>
-              <li>
+          <div className='flex flex-col md:flex-row w-full h-auto md:h-[380px] justify-center items-center gap-8 text-[#142e38] mb-[50px]'>
+            <ul className='list-disc list-inside flex flex-col gap-3 md:gap-0 h-full w-full md:w-[50%] justify-between items-center'>
+              <li className='text-justify md:text-left'>
                 <span className='font-medium'>Accesibilidad incomparable:</span> Con una ubicación céntrica y fácil acceso al transporte público, llegar a nuestro espacio es rápido y sencillo para ti y tus clientes.
               </li>
-              <li>
+              <li className='text-justify md:text-left'>
                 <span className='font-medium'>Entorno dinámico:</span> Sumérgete en un entorno vibrante y lleno de vida, rodeado de restaurantes, cafeterías, tiendas y otros negocios locales. Nuestra ubicación te ofrece la comodidad de tener todo lo que necesitas a pocos pasos de distancia.
               </li>
-              <li>
+              <li className='text-justify md:text-left'>
                 <span className='font-medium'>Conexiones estratégicas:</span> Al estar ubicados en una zona de alto tráfico comercial, tendrás la oportunidad de establecer conexiones valiosas y ampliar tu red profesional con facilidad.
               </li>
-              <li>
+              <li className='text-justify md:text-left'>
                 <span className='font-medium'>Ambiente inspirador:</span> Disfruta de vistas impresionantes, arquitectura única y un ambiente inspirador que te motiva a alcanzar tus metas y objetivos.
               </li>
             </ul>
-            <div className='w-[50%] flex justify-center items-center h-full'>
+            <div className='w-full md:w-[50%] flex justify-center items-center h-full'>
               <Image src={Building} alt='Building image' className='h-full' width='auto' height='auto' />
             </div>
           </div>
-          <div className='flex flex-col w-full h-full justify-center items-center gap-[65px] mt-[65px]'>
+
+          <div className='flex flex-col w-full h-full justify-center items-center md:gap-[65px] md:mt-[65px]'>
             <p className='text-[22px]'>Visítanos</p>
-            <div className='flex w-full h-auto py-6 justify-center items-start'>
+            <div className='flex flex-col md:flex-row w-full h-auto py-6 gap-6 md:gap-0 justify-center items-start'>
 
               <div className='flex flex-col w-full h-full justify-center items-center flex-grow gap-4 px-8'>
                 <div className='w-auto flex flex-col justify-center items-center gap-4'>
-                  <span className='flex h-full w-full justify-start items-center gap-2'>
+                  <span className='flex h-full w-full justify-center md:justify-start items-center gap-2'>
                     <Image src={MapIcon} alt='Map Icon' />
                     <p>Dirección</p>
                   </span>
-                  <p className='w-full'>
+                  <p className='w-full text-center md:text-left'>
                     Av. Rojo Gómez 595<br /> Esquina Bugambilias
                   </p>
                 </div>
@@ -61,15 +63,15 @@ export default function Espacios () {
 
               <div className='flex flex-col w-full h-full justify-center items-center flex-grow gap-4 px-8'>
                 <div className='w-auto flex flex-col justify-center items-center gap-4'>
-                  <span className='flex h-full w-full justify-start items-center gap-2'>
+                  <span className='flex h-full w-full justify-center md:justify-start items-center gap-2'>
                     <Image src={Phone} alt='Phone Icon' />
                     <p>Contacto</p>
                   </span>
                   <div className='flex flex-col w-full gap-2'>
-                    <a href='#'>
+                    <a className='text-center md:text-left' href='tel:9831542955'>
                       9831542955
                     </a>
-                    <a href='#'>
+                    <a className='text-center md:text-left' href='mailto:bahia.business.c@gmail.com?Subject=Información%20para%20renta%20de%20espacio'>
                       bahia.business.c@gmail.com
                     </a>
                   </div>
@@ -78,16 +80,16 @@ export default function Espacios () {
 
               <div className='flex flex-col w-full h-full justify-center items-center flex-grow gap-4 px-8'>
                 <div className='w-auto flex flex-col justify-center items-center gap-4'>
-                  <span className='flex w-full h-full justify-start items-center gap-2'>
+                  <span className='flex w-full h-full justify-center md:justify-start items-center gap-2'>
                     <Image src={Clock} alt='Clock Icon' />
                     <p>Horario</p>
                   </span>
                   <div className='flex w-full flex-col gap-2'>
-                    <p>
+                    <p className='text-center md:text-left'>
                       Lunes a viernes <br />
                       9:00 am - 6:00 pm
                     </p>
-                    <p>
+                    <p className='text-center md:text-left'>
                       Sábado <br />
                       9:00 am - 2:00 pm
                     </p>

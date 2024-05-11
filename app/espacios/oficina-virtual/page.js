@@ -28,16 +28,16 @@ export default function OficinaVirtual () {
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
       <BannerEspacios
-        height='h-[250px]'
+        height='h-[200px] md:h-[250px]'
         width='w-full'
         bgColor='bg-[#296675]/10'
         text={BANNER_TEXT}
         description={BANNER_DESCRIPTION}
       />
-      <div className='flex flex-col w-full h-full px-[50px] 2xl:px-[90px] py-[65px]'>
+      <div className='flex flex-col w-full h-full px-4 md:px-[50px] 2xl:px-[90px] py-[50px] md:py-[65px]'>
         <section className='flex flex-col w-full h-full justify-center items-start gap-10'>
           <p className='text-[22px]'>¿Qué incluye?</p>
-          <div className='flex w-full h-full justify-between items-start gap-8'>
+          <div className='flex md:flex-row flex-col w-full h-full justify-between items-start gap-8'>
             <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] self-start'>
               <section id='amenidades-juntas' className='w-full mx-auto'>
                 <div className='overflow-hidden'>
@@ -95,7 +95,7 @@ export default function OficinaVirtual () {
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
                           <span className='size-auto flex justify-center items-center'>
-                            <Image src={Briefcase} alt='Briefcase icon' className='size-[40px]' width='auto' />
+                            <Image src={Briefcase} alt='Briefcase icon' className='size-[60px] md:size-[40px]' width='auto' />
                           </span>
                           <h2>
                             Documentación de clientes y proveedores
@@ -119,7 +119,7 @@ export default function OficinaVirtual () {
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
                           <span className='size-auto flex justify-center items-center'>
-                            <Image src={DHL} alt='Mailbox icon' className='size-[40px]' width='auto' />
+                            <Image src={DHL} alt='Mailbox icon' className='size-[60px]' width='auto' />
                           </span>
                           <h2>
                             Envío de paquetería o correos por DHL pick up
@@ -143,7 +143,7 @@ export default function OficinaVirtual () {
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
                           <span className='size-auto flex justify-center items-center'>
-                            <Image src={TruckLoading} alt='TruckLoading icon' className='size-[40px]' width='auto' />
+                            <Image src={TruckLoading} alt='TruckLoading icon' className='size-[60px] md:size-[40px]' width='auto' />
                           </span>
                           <h2>
                             Entrega del paquete físico o digital al cliente

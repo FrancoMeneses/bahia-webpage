@@ -37,12 +37,12 @@ export const ContactForm = () => {
               <div className='flex flex-col md:flex-row w-full justify-center gap-7 items-start'>
                 <div className='flex flex-col w-full'>
                   <label htmlFor='nombre' className='text-[#142e38] text-[16px]'>Nombre *</label>
-                  <Field name='nombre' type='text' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
+                  <Field name='nombre' type='text' className='bg-[#2c8093] rounded-[5px] h-[45px] md:h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
                   <ErrorMessage name='nombre' component='p' className='text-red-500' />
                 </div>
                 <div className='flex flex-col w-full'>
                   <label htmlFor='apellido' className='text-[#142e38] text-[16px]'>Apellido *</label>
-                  <Field name='apellido' type='text' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
+                  <Field name='apellido' type='text' className='bg-[#2c8093] rounded-[5px] h-[45px] md:h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
                   <ErrorMessage name='apellido' component='p' className='text-red-500' />
                 </div>
               </div>
@@ -50,12 +50,12 @@ export const ContactForm = () => {
               <div className='flex w-full flex-col md:flex-row justify-center gap-7 items-start'>
                 <div className='flex flex-col w-full'>
                   <label htmlFor='email' className='text-[#142e38] text-[16px]'>Email *</label>
-                  <Field name='email' type='email' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
+                  <Field name='email' type='email' className='bg-[#2c8093] rounded-[5px] h-[45px] md:h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
                   <ErrorMessage name='email' component='p' className='text-red-500' />
                 </div>
                 <div className='flex flex-col w-full'>
                   <label htmlFor='telefono' className='text-[#142e38] text-[16px]'>Teléfono *</label>
-                  <Field name='telefono' type='phone' className='bg-[#2c8093] rounded-[5px] h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
+                  <Field name='telefono' type='phone' className='bg-[#2c8093] rounded-[5px] h-[45px] md:h-[35px] text-[#f0fbfb] pl-1.5 text-[16px]' />
                   <ErrorMessage name='telefono' component='p' className='text-red-500' />
                 </div>
               </div>

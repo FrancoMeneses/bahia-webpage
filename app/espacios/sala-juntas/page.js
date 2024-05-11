@@ -36,15 +36,15 @@ export default function SalaJuntas () {
         text={BANNER_TEXT}
         description={BANNER_DESCRIPTION}
       />
-      <div className='flex flex-col w-full h-full px-[50px] 2xl:px-[90px]'>
-        <section id='accesos' className='flex flex-col w-full h-full py-[65px]'>
+      <div className='flex flex-col w-full h-full px-4 md:px-[50px] 2xl:px-[90px]'>
+        <section id='accesos' className='flex flex-col w-full h-full py-[50px] md:py-[65px]'>
           <div className='flex flex-col w-full justify-center items-start gap-14 text-[#142e38]'>
             <div className='w-full flex flex-col justify-center items-start gap-8'>
               <p className='text-[22px]'>Contamos con 1 plan para la sala de juntas</p>
               <p className='text-[18px] font-light'>Nos adaptamos a tus necesidades</p>
             </div>
             <div className='w-full h-full flex justify-between items-center gap-10'>
-              <div className='w-[250px] h-[240px] border border-[#142e38] rounded-[10px] flex flex-col justify-start items-center text-[#142e38]'>
+              <div className='w-full md:w-[250px] h-[180px] md:h-[240px] border border-[#142e38] rounded-[10px] flex flex-col justify-start items-center text-[#142e38]'>
                 <h2 className='text-[22px] bg-[#142e38] text-[#f0fbfb] w-full h-auto p-1.5 pl-2 self-start rounded-t-lg'>Acceso por hora</h2>
                 <p className='p-2.5 text-[18px]'>Aprovecha al máximo cada minuto de tu tiempo, pagando solo por las horas que necesitas.</p>
               </div>
@@ -55,7 +55,7 @@ export default function SalaJuntas () {
           <p className='text-[22px]'>¿Qué incluye?</p>
           <div className='flex flex-col w-full h-full justify-between items-start gap-10'>
             <div className='flex w-full justify-start items-start gap-8 text-[#142e38] self-start'>
-              <section id='amenidades-juntas' className='w-[65%] mx-auto'>
+              <section id='amenidades-juntas' className='w-full md:w-[65%] mx-auto'>
                 <div className='overflow-hidden'>
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='1'>
@@ -109,7 +109,7 @@ export default function SalaJuntas () {
                   <div className='group outline-none accordion-section' tabIndex='3'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
-                        <div className='w-full h-full flex justify-start items-center gap-4'>
+                        <div className='w-full h-full flex justify-start items-center gap-6 md:gap-4'>
                           <span className='size-auto flex justify-center items-center'>
                             <Image src={Air} alt='Air icon' className='size-[40px]' width='auto' />
                           </span>
@@ -157,7 +157,7 @@ export default function SalaJuntas () {
                   <div className='group outline-none accordion-section' tabIndex='5'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
-                        <div className='w-full h-full flex justify-start items-center gap-4'>
+                        <div className='w-full h-full flex justify-start items-center gap-[30px] md:gap-4'>
                           <span className='size-auto flex justify-center items-center'>
                             <Image src={Coffee} alt='Coffee icon' className='size-[40px]' width='auto' />
                           </span>
@@ -181,7 +181,7 @@ export default function SalaJuntas () {
                   <div className='group outline-none accordion-section' tabIndex='6'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
-                        <div className='w-full h-full flex justify-start items-center gap-4'>
+                        <div className='w-full h-full flex justify-start items-center gap-[70px] md:gap-4'>
                           <span className='size-auto flex justify-center items-center'>
                             <Image src={Tv} alt='Tv icon' className='size-[40px]' width='auto' />
                           </span>

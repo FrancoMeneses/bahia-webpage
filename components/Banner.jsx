@@ -20,12 +20,12 @@ export const Banner = ({ width, height, bgColor, text, buttonText, link, image }
     )
   } else {
     return (
-      <div className={`${width} ${height} ${bgColor} flex justify-between items-center px-4 md:px-[50px] 2xl:px-[90px]`}>
+      <div className={`${width} ${height} ${bgColor} flex justify-center items-center px-4 md:px-[50px] 2xl:px-[90px]`}>
         <div className='w-full h-full flex flex-col justify-center items-center gap-12'>
-          <h1 className='text-[24px]'>
+          <h1 className='text-[22px] md:text-[24px] text-center md:text-left'>
             {text}
           </h1>
-          <Link href={link} className='w-[220px] h-[45px] bg-[#2c8093] text-white font-light rounded-[10px] text-[20px] flex justify-center items-center hover:scale-105 transition-all ease-in-out duration-150'>
+          <Link href={link} className='md:w-[220px] h-[45px] bg-[#2c8093] text-white font-light rounded-[10px] w-auto py-1.5 px-4 md:py-0 md:px-0 text-[16px] md:text-[20px] flex justify-center items-center hover:scale-105 transition-all ease-in-out duration-150'>
             {buttonText}
           </Link>
         </div>
