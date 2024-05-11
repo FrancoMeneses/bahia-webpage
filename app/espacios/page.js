@@ -221,7 +221,7 @@ export default function Espacios () {
                   un taller interactivo o una reunión estratégica.'
                 height='h-auto'
                 width='w-full'
-                link='/espacios/sala-capacitacion'
+                link='/espacios/sala-training'
               />
             </div>
           </div>

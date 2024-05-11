@@ -86,7 +86,7 @@ export const SliderMobile = () => {
                 un taller interactivo o una reunión estratégica.'
         height='h-[600px]'
         width='w-full'
-        link='/espacios/sala-capacitacion'
+        link='/espacios/sala-training'
       />
     </Carousel>
   )
