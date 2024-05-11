@@ -184,7 +184,7 @@ export default function Espacios () {
             </section>
           </div>
           <div className='hidden md:flex flex-col w-full h-full justify-center items-center gap-[65px]'>
-            <div className='flex justify-between items-center w-full h-full'>
+            <div className='flex justify-center gap-[60px] items-center w-full h-full'>
               <ServiceCard
                 image={ServiceCover}
                 title='Coworking'

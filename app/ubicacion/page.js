@@ -17,7 +17,7 @@ export default function Espacios () {
         bgColor='bg-[#296675]/10'
         text={BANNER_TEXT}
         buttonText='Ver ubicación'
-        link='/espacios#mapa'
+        link='/ubicacion#mapa'
       />
       <div className='flex flex-col w-full h-full px-4 md:px-[50px] 2xl:px-[90px]'>
         <section id='ubicacion-estrategica' className='flex flex-col w-full h-full py-[50px] md:py-[65px]'>

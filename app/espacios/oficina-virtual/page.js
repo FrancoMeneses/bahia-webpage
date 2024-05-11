@@ -44,7 +44,7 @@ export default function OficinaVirtual () {
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='1'>
                     <div className='group border border-[#142e38] border-b-0 rounded-t-xl flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
-                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                      <div className='text-[18px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
                           <span className='size-auto flex justify-center items-center'>
                             <Image src={Comercial} alt='Building icon' className='size-[40px]' width='auto' />
@@ -68,7 +68,7 @@ export default function OficinaVirtual () {
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='2'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
-                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                      <div className='text-[18px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
                           <span className='size-auto flex justify-center items-center'>
                             <Image src={Delivery} alt='Delivery icon' className='size-[40px]' width='auto' />
@@ -92,7 +92,7 @@ export default function OficinaVirtual () {
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='3'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
-                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                      <div className='text-[18px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
                           <span className='size-auto flex justify-center items-center'>
                             <Image src={Briefcase} alt='Briefcase icon' className='size-[60px] md:size-[40px]' width='auto' />
@@ -116,10 +116,10 @@ export default function OficinaVirtual () {
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='3'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
-                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                      <div className='text-[18px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
                           <span className='size-auto flex justify-center items-center'>
-                            <Image src={DHL} alt='Mailbox icon' className='size-[60px]' width='auto' />
+                            <Image src={DHL} alt='Mailbox icon' className='size-[40px]' width='auto' />
                           </span>
                           <h2>
                             Envío de paquetería o correos por DHL pick up
@@ -140,7 +140,7 @@ export default function OficinaVirtual () {
                   {/* <!-- accordion-tab  --> */}
                   <div className='group outline-none accordion-section' tabIndex='5'>
                     <div className='group border border-[#142e38] rounded-b-xl group-focus:rounded-none group-focus:border-b-0 flex justify-between px-4 py-3 items-center transition-all ease-out duration-500 cursor-pointer pr-10 relative'>
-                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                      <div className='text-[18px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
                           <span className='size-auto flex justify-center items-center'>
                             <Image src={TruckLoading} alt='TruckLoading icon' className='size-[60px] md:size-[40px]' width='auto' />

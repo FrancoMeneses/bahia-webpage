@@ -11,7 +11,7 @@ import { useState } from 'react'
 export const Navbar = () => {
   const pathname = usePathname()
   const isActive = (href) => pathname === href
-  const URLS = ['/espacios', '/espacios/coworking', '/espacios/privado', '/espacios/oficina-virtual', '/espacios/sala-de-juntas', '/ubicacion']
+  const URLS = ['/espacios', '/espacios/coworking', '/espacios/oficina-privada', '/espacios/oficina-virtual', '/espacios/sala-juntas', '/espacios/sala-training', '/ubicacion']
   const hasNav = () => {
     return URLS.includes(pathname)
   }
@@ -166,7 +166,14 @@ export const Navbar = () => {
           </ul>
         </div>
         <div className='w-[33%] md:w-[11%] h-full flex justify-end items-center'>
-          <button type='button' className='w-auto px-4 md:p-0 md:w-full h-[45px] text-[13px] md:text-[18px] bg-[#2c8093] text-white rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'>Cotizar ahora</button>
+          <Link
+            href={hasNav() ? `${pathname}#contacto` : '/#contacto'} onClick={() => {
+              setNavbarOpen(false)
+              setEspaciosOpen(false)
+            }} className='w-auto flex justify-center items-center px-4 md:p-0 md:w-full h-[45px] text-[13px] md:text-[18px] bg-[#2c8093] text-white rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'
+          >
+            Cotizar ahora
+          </Link>
         </div>
 
         <button
