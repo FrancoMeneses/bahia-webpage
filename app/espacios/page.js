@@ -13,6 +13,11 @@ import Spray from '../../assets/spray.svg'
 import Guia from '../../assets/Guia.svg'
 import { SliderMobile } from '@/components/SliderMobile'
 
+export const metadata = {
+  title: 'Espacios Bahía: Coworking, Oficinas Privadas, Oficinas Virtuales, Salas de Reuniones y Capacitación en Renta',
+  description: 'Explora Espacios Bahía: tu destino para coworking, oficinas privadas, virtuales, salas de reuniones y capacitación en Chetumal, Quintana Roo. ¡Encuentra el espacio perfecto para tu negocio hoy mismo!'
+}
+
 export default function Espacios () {
   const BANNER_TEXT = '¡Ahorra hasta un 30% con nuestras membresías!'
 

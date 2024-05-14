@@ -11,6 +11,11 @@ import Spray from '../../../assets/spray.svg'
 import Silla from '../../../assets/silla.svg'
 import { CustomCarousel } from '@/components/Carousel'
 
+export const metadata = {
+  title: 'Coworking en Chetumal, Quintana Roo: Espacios flexibles para emprendedores y profesionales independientes',
+  description: 'Descubre el espacio de Bahía Coworking en Chetumal, Quintana Roo: un espacio colaborativo para emprendedores. Ofrecemos instalaciones modernas y flexibles para tu negocio en Bahía Business Center.'
+}
+
 export default function Coworking () {
   const BANNER_TEXT = 'COWORKING'
   const BANNER_DESCRIPTION = 'Área de trabajo que permite a los profesionales compartir un mismo espacio y creaciones de networking'

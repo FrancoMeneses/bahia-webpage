@@ -11,6 +11,11 @@ import Spray from '../../../assets/spray.svg'
 import Tv from '../../../assets/tv.svg'
 import { CustomCarousel } from '@/components/Carousel'
 
+export const metadata = {
+  title: 'Renta de Sala de Juntas en Chetumal, Quintana Roo: Espacios profesionales para reuniones exitosas',
+  description: 'Encuentra salas de juntas en Chetumal, Quintana Roo. Ambientes ideales para reuniones exitosas en Bahía Business Center.'
+}
+
 export default function SalaJuntas () {
   const BANNER_TEXT = 'SALA DE JUNTAS'
   const BANNER_DESCRIPTION = 'Área multiusos designada donde se puede tener reuniones laborales o extraordinarias, así como también ponencias y pláticas de negocios'

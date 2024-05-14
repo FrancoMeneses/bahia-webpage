@@ -3,6 +3,11 @@ import { ContactForm } from '@/components/Form'
 import { CustomCarousel } from '@/components/Carousel'
 import { TabsPrivada } from '@/components/tabsPrivada'
 
+export const metadata = {
+  title: 'Renta de Oficinas Privadas en Chetumal, Quintana Roo: Espacios personalizados y flexibles para tu negocio',
+  description: 'Descubre nuestros espacios para oficinas privadas en Chetumal, Quintana Roo. Espacios personalizados, flexibles y modernos para tu negocio en Bahía Business Center.'
+}
+
 export default function OficinaPrivada () {
   const BANNER_TEXT = 'OFICINA PRIVADA'
   const BANNER_DESCRIPTION = 'Espacio ejecutivo donde podrás crear, compartir y ejecutar con tus clientes o equipo de trabajo tus ideas, de una manera más cómoda.'

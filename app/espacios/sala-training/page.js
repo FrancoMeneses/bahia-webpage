@@ -12,6 +12,11 @@ import Tv from '../../../assets/tv.svg'
 import Camera from '../../../assets/camera.svg'
 import { CustomCarousel } from '@/components/Carousel'
 
+export const metadata = {
+  title: 'Renta de Sala de Capacitación en Chetumal, Quintana Roo: Espacios ideales para formación profesional',
+  description: 'Reserva tu sala de capacitación en Chetumal, Quintana Roo. Espacios equipados para eventos formativos en Bahía Business Center.'
+}
+
 export default function SalaTraining () {
   const BANNER_TEXT = 'SALA DE CAPACITACIÓN'
   const BANNER_SUBTITLE = '(TRAINING ROOM)'

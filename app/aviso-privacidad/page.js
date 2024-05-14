@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Aviso de Privacidad Integral Bahía Business Center',
+  description: 'Explora nuestro aviso de privacidad integral'
+}
+
 export default function AvisoDePrivacidad () {
   return (
     <main className='font-text py-6 px-4 md:px-[50px] 2xl:px-[90px] flex flex-col w-full h-auto gap-4'>

@@ -6,6 +6,11 @@ import MapIcon from '../../assets/mapIcon.svg'
 import Phone from '../../assets/phone.svg'
 import Clock from '../../assets/clock.svg'
 
+export const metadata = {
+  title: 'Ubicación de Bahía Business Center, descubre el lugar ideal para tu negocio',
+  description: 'Explora nuestra ubicación en Chetumal, Quintana Roo. Encuentra el lugar perfecto para trabajar y colaborar.'
+}
+
 export default function Espacios () {
   const BANNER_TEXT = '¡Descubre la ubicación perfecta para impulsar tu negocio y tu creatividad!'
 

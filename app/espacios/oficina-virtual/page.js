@@ -9,6 +9,11 @@ import TruckLoading from '../../../assets/truck-loading.svg'
 import DHL from '../../../assets/dhl.svg'
 import { CustomCarousel } from '@/components/Carousel'
 
+export const metadata = {
+  title: 'Renta de Oficinas Virtuales en Chetumal, Quintana Roo: Tu espacio de trabajo desde cualquier lugar',
+  description: 'Encuentra oficinas virtuales flexibles en Chetumal, Quintana Roo. Trabaja desde cualquier lugar con nuestra solución profesional y eficiente con Bahía Business Center.'
+}
+
 export default function OficinaVirtual () {
   const BANNER_TEXT = 'OFICINA VIRTUAL'
   const BANNER_DESCRIPTION = 'Te ofrecemos una solución completa para tu empresa sin la necesidad de una ubicación física.'
