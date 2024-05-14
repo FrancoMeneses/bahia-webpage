@@ -28,8 +28,25 @@ export const ContactForm = () => {
                 .max(100, 'Máximo 100 caracteres')
                 .required('Campo requerido')
             })}
-            onSubmit={(values, { setSubmitting }) => {
+            onSubmit={async (values, { setSubmitting, resetForm }) => {
               console.log(values)
+              console.log(process.env.NODE_ENV)
+              if (process.env.NODE_ENV === 'development') {
+                const res = await fetch('http://localhost:3000/api/send', {
+                  method: 'POST',
+                  body: JSON.stringify(values)
+                })
+                if (res.status === 200) {
+                  resetForm()
+                  document.getElementById('success-msg').classList.remove('hidden')
+                  document.getElementById('submit-btn').classList.add('hidden')
+                  setTimeout(() => {
+                    document.getElementById('success-msg').classList.add('hidden')
+                    document.getElementById('submit-btn').classList.remove('hidden')
+                  }, 3000)
+                }
+                console.log(res)
+              }
               setSubmitting(false)
             }}
           >
@@ -66,7 +83,11 @@ export const ContactForm = () => {
                 <ErrorMessage name='mensaje' component='p' className='text-red-500' />
               </div>
 
-              <button type='submit' className='w-auto h-auto py-1.5 px-11 md:px-8 text-[16px] bg-[#142e38] text-[#f0fbfb] rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'>Enviar</button>
+              <div className='flex flex-col w-full h-auto justify-center items-center'>
+                <button id='submit-btn' type='submit' className='w-auto h-auto py-1.5 px-11 md:px-8 text-[16px] bg-[#142e38] text-[#f0fbfb] rounded-[10px] hover:scale-105 transition-all ease-in-out duration-150'>Enviar</button>
+                <p id='success-msg' className='hidden text-[16px] text-[#142e38]'>Gracias por comunicarse, su mensaje fue enviado correctamente</p>
+              </div>
+
             </Form>
           </Formik>
         </div>
