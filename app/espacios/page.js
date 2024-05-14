@@ -24,7 +24,7 @@ export default function Espacios () {
         bgColor='bg-[#296675]/10'
         text={BANNER_TEXT}
         buttonText='Obtener información'
-        link='#'
+        link='/espacios#contacto'
       />
       <div className='flex flex-col w-full h-full px-4 md:px-[50px] 2xl:px-[90px]'>
         <section id='amenidades' className='flex flex-col w-full h-full py-[65px]'>

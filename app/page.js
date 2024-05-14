@@ -9,7 +9,7 @@ import Link from 'next/link'
 import { SliderMobile } from '@/components/SliderMobile'
 
 export default function Home () {
-  const BANNER_TEXT = 'Bienvenido a la capital del caribe mexicano, la mejor opción para un centro de negocio.'
+  const BANNER_TEXT = 'Bienvenido a Bahía Business Center, la mejor opción para hacer negocios en la capital del Caribe mexicano.'
 
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
@@ -25,7 +25,7 @@ export default function Home () {
       <div className='flex flex-col w-full h-full px-4 md:px-[50px] 2xl:px-[90px]'>
         <section id='inicio-espacios' className='flex flex-col w-full h-full py-[20px] md:py-[65px]'>
           <div className='flex flex-col w-full justify-center items-start gap-8 text-[#142e38] mb-[50px]'>
-            <p className='text-[22px]'>Estamos comprometidos a proporcionarte el ambiente<br /> ideal para que tu negocio prospere</p>
+            <p className='text-[22px]'>Estamos comprometidos a proporcionarte el ambiente<br /> ideal para potencializar tu negocio</p>
             <p className='text-[18px] font-light'>Ecosistema completo diseñado para satisfacer todas tus necesidades<br /> profesionales.</p>
           </div>
           <div className='md:hidden'>
@@ -48,7 +48,7 @@ export default function Home () {
               <ServiceCard
                 image={ServiceCover}
                 title='Oficina virtual'
-                text='Área donde disfrutar de cierto grado de privacidad visual y acústica, manteniendo un sentido de conexión con la comunidad de trabajo más amplia.'
+                text='Solución que permite a los profesionales y a las empresas trabajar desde cualquier lugar, sin necesidad de tener un espacio físico propio, pero si un punto de reunión para tus clientes y proveedores.'
                 link='/espacios/oficina-virtual'
               />
             </div>

@@ -45,19 +45,19 @@ export default function Coworking () {
             </div>
             <div className='w-full h-full flex flex-col justify-center md:flex-row md:justify-between items-center gap-10'>
               <div className='w-full md:w-[250px] h-[210px] md:h-[250px] border border-[#142e38] rounded-[10px] flex flex-col justify-start items-center text-[#142e38]'>
-                <h2 className='text-[20px] bg-[#142e38] text-[#f0fbfb] w-full h-[70px] p-1.5 pl-2 self-start rounded-t-lg'>Memebresía por hora</h2>
+                <h2 className='text-[20px] bg-[#142e38] text-[#f0fbfb] w-full h-[70px] p-1.5 pl-2 self-start rounded-t-lg flex justify-center items-center'>Memebresía por hora</h2>
                 <p className='p-2.5 text-[18px]'>Aprovecha al máximo cada minuto de tu tiempo, pagando solo por las horas que necesitas.</p>
               </div>
               <div className='w-full md:w-[250px] h-[210px] md:h-[250px] border border-[#142e38] rounded-[10px] flex flex-col justify-start items-center text-[#142e38]'>
-                <h2 className='text-[22px] bg-[#142e38] text-[#f0fbfb] w-full h-[70px] p-1.5 pl-2 self-start rounded-t-lg'>Daypass</h2>
+                <h2 className='text-[22px] bg-[#142e38] text-[#f0fbfb] w-full h-[70px] p-1.5 pl-2 self-start rounded-t-lg flex justify-center items-center'>Daypass</h2>
                 <p className='p-2.5 text-[18px]'>Experimenta todo lo que nuestro coworking tiene para ofrecer en un solo día, sin compromisos a largo plazo.</p>
               </div>
               <div className='w-full md:w-[250px] h-[210px] md:h-[250px] border border-[#142e38] rounded-[10px] flex flex-col justify-start items-center text-[#142e38]'>
-                <h2 className='text-[20px] bg-[#142e38] text-[#f0fbfb] w-full h-[70px] p-1.5 pl-2 self-start rounded-t-lg'>Membresía por semana</h2>
+                <h2 className='text-[20px] bg-[#142e38] text-[#f0fbfb] w-full h-[70px] p-1.5 pl-2 self-start rounded-t-lg flex justify-center items-center text-center'>Membresía por semana</h2>
                 <p className='p-2.5 text-[18px]'>Únete a nuestra comunidad durante una semana completa y descubre el poder de trabajar en un entorno dinámico y profesional.</p>
               </div>
               <div className='w-full md:w-[250px] h-[210px] md:h-[250px] border border-[#142e38] rounded-[10px] flex flex-col justify-start items-center text-[#142e38]'>
-                <h2 className='text-[22px] bg-[#142e38] text-[#f0fbfb] w-full h-[70px] p-1.5 pl-2 self-start rounded-t-lg'>Membresía por mes</h2>
+                <h2 className='text-[22px] bg-[#142e38] text-[#f0fbfb] w-full h-[70px] p-1.5 pl-2 self-start rounded-t-lg flex justify-center items-center'>Membresía por mes</h2>
                 <p className='p-2.5 text-[18px]'>Obtén una membresía completa que te brinda la libertad de trabajar en nuestro coworking durante todo el mes.</p>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function Coworking () {
                     </div>
                     <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
                       <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
-                        Elige libremente cuándo comenzar y terminar su jornada laboral, brindando una mayor autonomía y flexibilidad para equilibrar la vida personal y profesional.
+                        Elige libremente cuándo comenzar y terminar tu jornada laboral, brindando una mayor autonomía y flexibilidad para equilibrar la vida personal y profesional.
                       </p>
                     </div>
                   </div>
