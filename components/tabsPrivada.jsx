@@ -11,6 +11,7 @@ import Spray from '../assets/spray.svg'
 import Fiscal from '../assets/fiscal.svg'
 import Comercial from '../assets/comercial.svg'
 import Silla from '../assets/silla.svg'
+import Tools from '../assets/tools.svg'
 import Image from 'next/image'
 
 export const TabsPrivada = () => {
@@ -416,7 +417,7 @@ export const TabsPrivada = () => {
                   </div>
                   {/* <!-- accordion-tab --> */}
                   {/* <!-- accordion-tab  --> */}
-                  <div className='group outline-none accordion-section' tabIndex='1'>
+                  <div className='group outline-none accordion-section' tabIndex='2'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
@@ -440,7 +441,31 @@ export const TabsPrivada = () => {
                   </div>
                   {/* <!-- accordion-tab --> */}
                   {/* <!-- accordion-tab  --> */}
-                  <div className='group outline-none accordion-section' tabIndex='2'>
+                  <div className='group outline-none accordion-section' tabIndex='3'>
+                    <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
+                      <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
+                        <div className='w-full h-full flex justify-start items-center gap-4'>
+                          <span className='size-auto flex justify-center items-center'>
+                            <Image src={Tools} alt='House icon' className='size-[40px]' width='auto' />
+                          </span>
+                          <h2>
+                            Personaliza tu oficina
+                          </h2>
+                        </div>
+                        <span className='size-auto items-center h-full inline-flex justify-center transform transition ease duration-500 group-focus:text-white group-focus:-rotate-180 absolute top-0 right-0 mb-auto ml-auto mt-0 mr-2'>
+                          <Image src={Down} alt='Arrow Icon' className='size-[36px]' width='auto' />
+                        </span>
+                      </div>
+                    </div>
+                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
+                      <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
+                        Adecua tu oficina de acuerdo a tus necesidades, banners, logos, o adicional algún otro mobiliario que necesites para dar la imagen empresarial a tu negocio.
+                      </p>
+                    </div>
+                  </div>
+                  {/* <!-- accordion-tab --> */}
+                  {/* <!-- accordion-tab  --> */}
+                  <div className='group outline-none accordion-section' tabIndex='4'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
@@ -464,7 +489,7 @@ export const TabsPrivada = () => {
                   </div>
                   {/* <!-- accordion-tab --> */}
                   {/* <!-- accordion-tab  --> */}
-                  <div className='group outline-none accordion-section' tabIndex='3'>
+                  <div className='group outline-none accordion-section' tabIndex='5'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
@@ -488,7 +513,7 @@ export const TabsPrivada = () => {
                   </div>
                   {/* <!-- accordion-tab --> */}
                   {/* <!-- accordion-tab  --> */}
-                  <div className='group outline-none accordion-section' tabIndex='4'>
+                  <div className='group outline-none accordion-section' tabIndex='6'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
@@ -512,7 +537,7 @@ export const TabsPrivada = () => {
                   </div>
                   {/* <!-- accordion-tab --> */}
                   {/* <!-- accordion-tab  --> */}
-                  <div className='group outline-none accordion-section' tabIndex='5'>
+                  <div className='group outline-none accordion-section' tabIndex='7'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
@@ -536,7 +561,7 @@ export const TabsPrivada = () => {
                   </div>
                   {/* <!-- accordion-tab --> */}
                   {/* <!-- accordion-tab  --> */}
-                  <div className='group outline-none accordion-section' tabIndex='6'>
+                  <div className='group outline-none accordion-section' tabIndex='8'>
                     <div className='group border border-[#142e38] border-b-0 flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative'>
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
@@ -560,7 +585,7 @@ export const TabsPrivada = () => {
                   </div>
                   {/* <!-- accordion-tab --> */}
                   {/* <!-- accordion-tab  --> */}
-                  <div className='group outline-none accordion-section' tabIndex='7'>
+                  <div className='group outline-none accordion-section' tabIndex='9'>
                     <div className='group border border-[#142e38] rounded-b-xl group-focus:rounded-none group-focus:border-b-0 flex justify-between px-4 py-3 items-center transition-all ease-out duration-500 cursor-pointer pr-10 relative'>
                       <div className='text-[20px] text-center w-full group-focus:font-semibold text-[#142e38] transition ease duration-500 flex'>
                         <div className='w-full h-full flex justify-start items-center gap-4'>
