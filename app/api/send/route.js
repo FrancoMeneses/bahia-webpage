@@ -9,8 +9,8 @@ export async function POST (req) {
   // return Response.json({ formData }, { status: 200 })
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Bahía Business Center Formulario <test@resend.dev>',
-      to: ['meneses773@gmail.com'],
+      from: 'Bahía Business Center Formulario <info@bahiabusinesscenter.com.mx>',
+      to: ['bahia.business.c@gmail.com'],
       subject: 'Solicitud de información',
       react: EmailTemplate({
         nombre: formData.nombre,
