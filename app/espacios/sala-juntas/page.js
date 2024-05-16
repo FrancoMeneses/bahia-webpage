@@ -151,9 +151,9 @@ export default function SalaJuntas () {
                         </span>
                       </div>
                     </div>
-                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center'>
-                      <p className='p-2 text-[#142e38] text-justify max-w-6xl'>
-                        Simplifica tus tareas administrativas con nuestro centro de copiado y escaneo.<br /> <span className='font-semibold'>*Disponible con costo extra</span>
+                    <div className='group-focus:max-h-screen max-h-0 bg-[#296675]/10 border-x border-[#142e38] px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-start'>
+                      <p className='p-2 text-[#142e38] text-justify flex flex-col max-w-6xl'>
+                        Simplifica tus tareas administrativas con nuestro centro de copiado y escaneo.<span className='font-semibold'>*Disponible con costo extra</span>
                       </p>
                     </div>
                   </div>
