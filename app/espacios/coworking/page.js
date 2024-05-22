@@ -21,15 +21,18 @@ export default function Coworking () {
   const BANNER_DESCRIPTION = 'Área de trabajo que permite a los profesionales compartir un mismo espacio y creaciones de networking'
   const carouselImages = [{
     image: 'https://placehold.co/600x400',
-    description: 'Lugar 1'
+    title: 'Lugar 1',
+    description: 'Descripción del lugar 1'
   },
   {
-    image: 'https://placehold.co/600x400',
-    description: 'Lugar 2'
+    image: 'https://placehold.co/600x500',
+    title: 'Lugar 2',
+    description: 'Descripción del lugar 2'
   },
   {
-    image: 'https://placehold.co/600x400',
-    description: 'Lugar 3'
+    image: 'https://placehold.co/600x600',
+    title: 'Lugar 3',
+    description: 'Descripción del lugar 3'
   }]
 
   return (

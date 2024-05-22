@@ -13,15 +13,18 @@ export default function OficinaPrivada () {
   const BANNER_DESCRIPTION = 'Espacio ejecutivo donde podrás crear, compartir y ejecutar con tus clientes o equipo de trabajo tus ideas, de una manera más cómoda.'
   const carouselImages = [{
     image: 'https://placehold.co/600x400',
-    description: 'Lugar 1'
+    title: 'Lugar 1',
+    description: 'Descripción del lugar 1'
   },
   {
-    image: 'https://placehold.co/600x400',
-    description: 'Lugar 2'
+    image: 'https://placehold.co/600x500',
+    title: 'Lugar 2',
+    description: 'Descripción del lugar 2'
   },
   {
-    image: 'https://placehold.co/600x400',
-    description: 'Lugar 3'
+    image: 'https://placehold.co/600x600',
+    title: 'Lugar 3',
+    description: 'Descripción del lugar 3'
   }]
 
   return (

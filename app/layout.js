@@ -5,6 +5,10 @@ import { Footer } from '@/components/Footer'
 import WhatsApp from '@/components/WhatsApp'
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import 'yet-another-react-lightbox/styles.css'
+import 'yet-another-react-lightbox/plugins/thumbnails.css'
+import 'yet-another-react-lightbox/plugins/captions.css'
+import 'yet-another-react-lightbox/plugins/counter.css'
 
 // const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat({ subsets: ['latin'] })

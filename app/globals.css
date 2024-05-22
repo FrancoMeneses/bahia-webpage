@@ -5,6 +5,18 @@
 @layer utilities {
 }
 
+:root {
+  --yarl__color_backdrop: rgba(0, 0, 0, .9);
+}
+
+.yarl__slide_title_container {
+  background: #2c8093 !important;
+}
+
+.yarl__slide_description_container {
+  background: #2c8093 !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
