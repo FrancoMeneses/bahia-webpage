@@ -1,23 +1,32 @@
-import { Banner } from '@/components/Banner'
 import { ServiceCard } from '@/components/ServiceCard'
 import Image from 'next/image'
 import { ContactForm } from '@/components/Form'
 import Pana from '../assets/pana.svg'
 import Link from 'next/link'
 import { SliderMobile } from '@/components/SliderMobile'
+import { BannerVideo } from '@/components/BannerVideo'
 
 export default function Home () {
   const BANNER_TEXT = 'Bienvenido a Bahía Business Center, la mejor opción para hacer negocios en la capital del Caribe mexicano.'
 
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
-      <Banner
+      {/* <Banner
         height='h-[200px] md:h-[418px]'
         width='w-full'
         bgColor='bg-[#296675]/10'
         text={BANNER_TEXT}
         buttonText='Ver ubicación'
         image={Pana}
+        link='/ubicacion#mapa'
+      /> */}
+      <BannerVideo
+        height='h-[200px] md:h-[326px]'
+        width='w-full'
+        bgColor='bg-[#296675]/10'
+        text={BANNER_TEXT}
+        buttonText='Ver ubicación'
+        videoLink={Pana}
         link='/ubicacion#mapa'
       />
       <div className='flex flex-col w-full h-full px-4 md:px-[50px] 2xl:px-[90px]'>

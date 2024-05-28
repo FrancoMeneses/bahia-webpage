@@ -1,7 +1,7 @@
 import { Banner } from '@/components/Banner'
 import { ContactForm } from '@/components/Form'
 import Image from 'next/image'
-import Building from '../../assets/bro.svg'
+// import Building from '../../assets/bro.svg'
 import MapIcon from '../../assets/mapIcon.svg'
 import Phone from '../../assets/phone.svg'
 import Clock from '../../assets/clock.svg'
@@ -49,7 +49,7 @@ export default function Espacios () {
               </li>
             </ul>
             <div className='w-full md:w-[50%] flex justify-center items-center h-full'>
-              <Image src={Building} alt='Building image' className='h-full' width='auto' height='auto' />
+              <Image src='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716859671/Webpage/Ubicaci%C3%B3n/IMG_3883_jsbtda.webp' width={4000} height={2250} alt='Building image' className='h-full rounded-[10px]' />
             </div>
           </div>
 
