@@ -63,9 +63,11 @@ export default function SalaTraining () {
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
       <BannerEspacios
-        height='h-[280px]'
+        height='h-[250px] md:h-[350px]'
         width='w-full'
         bgColor='bg-[#296675]/10'
+        bgLink='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832513/Webpage/Sala%20de%20Capacitaci%C3%B3n/mgrzpscyuzlpdrkyf9zj.webp'
+        position='bg-center md:bg-[center_top_-300px]'
         text={BANNER_TEXT}
         subtitle={BANNER_SUBTITLE}
         description={BANNER_DESCRIPTION}

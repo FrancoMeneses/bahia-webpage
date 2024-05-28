@@ -48,9 +48,11 @@ export default function OficinaPrivada () {
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
       <BannerEspacios
-        height='h-[230px] md:h-[250px]'
+        height='h-[250px] md:h-[350px]'
         width='w-full'
         bgColor='bg-[#296675]/10'
+        bgLink='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832412/Webpage/Oficinas%20Privadas/ndi3oui02ybvuszefsot.webp'
+        position='bg-top'
         text={BANNER_TEXT}
         description={BANNER_DESCRIPTION}
       />
