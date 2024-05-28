@@ -40,6 +40,11 @@ body {
   padding-inline: 50px !important;
 }
 
+.bg-custom {
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
 @media (max-width: 640px) {
   .react-tabs__tab {
     width: 100% !important;

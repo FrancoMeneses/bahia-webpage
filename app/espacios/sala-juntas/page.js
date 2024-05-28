@@ -51,7 +51,7 @@ export default function SalaJuntas () {
   return (
     <main className='w-full h-full flex flex-col justify-center items-center'>
       <BannerEspacios
-        height='h-[250px] md:h-[350px]'
+        height='h-[250px] md:h-[350px] 2xl:h-[420px]'
         width='w-full'
         bgColor='bg-[#296675]/10'
         bgLink='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832468/Webpage/Sala%20de%20Juntas/eef94hukbkrnnih0zib2.webp'
