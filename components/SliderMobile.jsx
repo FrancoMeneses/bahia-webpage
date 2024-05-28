@@ -1,7 +1,6 @@
 'use client'
 import { Carousel } from 'react-responsive-carousel'
 import { ServiceCard } from './ServiceCard'
-import ServiceCover from '../assets/rafiki.svg'
 
 export const SliderMobile = () => {
   const indicatorStyles = {
@@ -47,7 +46,7 @@ export const SliderMobile = () => {
       }}
     >
       <ServiceCard
-        image={ServiceCover}
+        image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/tclkqzehgwl6grsfbk2q.webp'
         title='Coworking'
         text='Trabaja de forma independiente mientras disfrutas de los beneficios de la colaboración, el intercambio de ideas y el establecimiento de conexiones significativas.'
         link='/espacios/coworking'
@@ -55,7 +54,7 @@ export const SliderMobile = () => {
         height='h-[600px]'
       />
       <ServiceCard
-        image={ServiceCover}
+        image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832414/Webpage/Oficinas%20Privadas/ffg9wbr4pxjhbgrdqrhx.webp'
         title='Oficina privada'
         text='Área dedicada exclusivamente a una persona o equipo específico, separada físicamente del resto del espacio compartido.'
         link='/espacios/oficina-privada'
@@ -63,7 +62,7 @@ export const SliderMobile = () => {
         height='h-[600px]'
       />
       <ServiceCard
-        image={ServiceCover}
+        image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832546/Webpage/Oficina%20Virtual/vwopybmv2nu52ctrvahp.webp'
         title='Oficina virtual'
         text='Área donde disfrutar de cierto grado de privacidad visual y acústica, manteniendo un sentido de conexión con la comunidad de trabajo más amplia.'
         link='/espacios/oficina-virtual'
@@ -71,7 +70,7 @@ export const SliderMobile = () => {
         height='h-[600px]'
       />
       <ServiceCard
-        image={ServiceCover}
+        image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832469/Webpage/Sala%20de%20Juntas/f21htfihzjpgxr8lkcut.webp'
         title='Sala de juntas'
         text='Espacio designado específicamente para reuniones, presentaciones y discusiones entre equipos, clientes o socios comerciales, con tecnología audiovisual para facilitar la
                 comunicación efectiva y la colaboración durante las reuniones.'
@@ -80,7 +79,7 @@ export const SliderMobile = () => {
         link='/espacios/sala-juntas'
       />
       <ServiceCard
-        image={ServiceCover}
+        image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832512/Webpage/Sala%20de%20Capacitaci%C3%B3n/ch0dfrn93rfhjlo1rkw6.webp'
         title='Sala de capacitación (Training Room)'
         text='La atmósfera tranquila y profesional de la sala de capacitación la convierte en el lugar perfecto para sumergirse en el aprendizaje y la reflexión. Ya sea para una sesión de capacitación intensiva,
                 un taller interactivo o una reunión estratégica.'

@@ -1,8 +1,6 @@
 import { Banner } from '@/components/Banner'
 import { ServiceCard } from '@/components/ServiceCard'
-import ServiceCover from '../assets/rafiki.svg'
 import Image from 'next/image'
-import Desk from '../assets/desk.jpg'
 import { ContactForm } from '@/components/Form'
 import Pana from '../assets/pana.svg'
 import Link from 'next/link'
@@ -32,21 +30,21 @@ export default function Home () {
             <SliderMobile />
           </div>
           <div className='hidden md:flex flex-col w-full h-full justify-center items-center gap-[65px]'>
-            <div className='flex justify-center gap-[60px] items-center w-full h-full'>
+            <div className='flex justify-center 2xl:justify-between gap-[60px] items-center w-full h-full'>
               <ServiceCard
-                image={ServiceCover}
+                image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/tclkqzehgwl6grsfbk2q.webp'
                 title='Coworking'
                 text='Trabaja de forma independiente mientras disfrutas de los beneficios de la colaboración, el intercambio de ideas y el establecimiento de conexiones significativas.'
                 link='/espacios/coworking'
               />
               <ServiceCard
-                image={ServiceCover}
+                image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832414/Webpage/Oficinas%20Privadas/ffg9wbr4pxjhbgrdqrhx.webp'
                 title='Oficina privada'
                 text='Área dedicada exclusivamente a una persona o equipo específico, separada físicamente del resto del espacio compartido.'
                 link='/espacios/oficina-privada'
               />
               <ServiceCard
-                image={ServiceCover}
+                image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832546/Webpage/Oficina%20Virtual/vwopybmv2nu52ctrvahp.webp'
                 title='Oficina virtual'
                 text='Solución que permite a los profesionales y a las empresas trabajar desde cualquier lugar, sin necesidad de tener un espacio físico propio, pero si un punto de reunión para tus clientes y proveedores.'
                 link='/espacios/oficina-virtual'
@@ -54,7 +52,7 @@ export default function Home () {
             </div>
             <div className='w-full flex justify-between items-center gap-[65px]'>
               <ServiceCard
-                image={ServiceCover}
+                image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832469/Webpage/Sala%20de%20Juntas/f21htfihzjpgxr8lkcut.webp'
                 title='Sala de juntas'
                 text='Espacio designado específicamente para reuniones, presentaciones y discusiones entre equipos, clientes o socios comerciales, con tecnología audiovisual para facilitar la
                 comunicación efectiva y la colaboración durante las reuniones.'
@@ -63,7 +61,7 @@ export default function Home () {
                 link='/espacios/sala-juntas'
               />
               <ServiceCard
-                image={ServiceCover}
+                image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832512/Webpage/Sala%20de%20Capacitaci%C3%B3n/ch0dfrn93rfhjlo1rkw6.webp'
                 title='Sala de capacitación (Training Room)'
                 text='La atmósfera tranquila y profesional de la sala de capacitación la convierte en el lugar perfecto para sumergirse en el aprendizaje y la reflexión. Ya sea para una sesión de capacitación intensiva,
                 un taller interactivo o una reunión estratégica.'
@@ -75,9 +73,9 @@ export default function Home () {
           </div>
         </section>
       </div>
-      <section id='inicio-guia' className='bg-[#142e38] h-[300px] md:h-[400px] mt-[50px] md:mt-0 w-full flex justify-between items-center text-white'>
+      <section id='inicio-guia' className='bg-[#142e38] h-[300px] md:h-[400px] 2xl:h-[500px] mt-[50px] md:mt-0 w-full flex justify-between items-center text-white'>
         <div className='h-full w-[45%] hidden md:flex'>
-          <Image src={Desk} alt='Desk image' width='auto' height='auto' />
+          <Image src='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832512/Webpage/Sala%20de%20Capacitaci%C3%B3n/dcmdexqnwmy0w9dyarxg.webp' alt='Desk image' width={4160} height={3134} className='' />
         </div>
         <div className='flex flex-col h-full w-full py-4 px-4 md:p-0 md:w-[55%] justify-evenly items-center'>
           <p className='hidden md:block text-[20px]'>

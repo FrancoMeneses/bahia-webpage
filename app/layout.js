@@ -19,7 +19,10 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Bahía Business Center',
-  description: 'Una nueva forma de hacer negocios'
+  description: 'Una nueva forma de hacer negocios',
+  openGraph: {
+    images: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832513/Webpage/Sala%20de%20Capacitaci%C3%B3n/mgrzpscyuzlpdrkyf9zj.webp'
+  }
 }
 
 export default function RootLayout ({ children }) {

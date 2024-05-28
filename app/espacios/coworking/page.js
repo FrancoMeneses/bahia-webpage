@@ -13,26 +13,69 @@ import { CustomCarousel } from '@/components/Carousel'
 
 export const metadata = {
   title: 'Coworking en Chetumal, Quintana Roo: Espacios flexibles para emprendedores y profesionales independientes',
-  description: 'Descubre el espacio de Bahía Coworking en Chetumal, Quintana Roo: un espacio colaborativo para emprendedores. Ofrecemos instalaciones modernas y flexibles para tu negocio en Bahía Business Center.'
+  description: 'Descubre el espacio de Bahía Coworking en Chetumal, Quintana Roo: un espacio colaborativo para emprendedores. Ofrecemos instalaciones modernas y flexibles para tu negocio en Bahía Business Center.',
+  openGraph: {
+    images: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/ihqzheiqtbkzbsyuemwk.webp'
+  }
 }
 
 export default function Coworking () {
   const BANNER_TEXT = 'COWORKING'
   const BANNER_DESCRIPTION = 'Área de trabajo que permite a los profesionales compartir un mismo espacio y creaciones de networking'
   const carouselImages = [{
-    image: 'https://placehold.co/600x400',
-    title: 'Lugar 1',
-    description: 'Descripción del lugar 1'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/uzp3ihfbg9c1l9hikkgf.webp',
+    title: 'Ambiente de trabajo',
+    description: ''
   },
   {
-    image: 'https://placehold.co/600x500',
-    title: 'Lugar 2',
-    description: 'Descripción del lugar 2'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832218/Webpage/Coworking/eopqbazirqzxzp0ngz7e.webp',
+    title: 'Ambiente empresarial',
+    description: ''
   },
   {
-    image: 'https://placehold.co/600x600',
-    title: 'Lugar 3',
-    description: 'Descripción del lugar 3'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/voaltgl3j1kojmscluzx.webp',
+    title: 'Chetumal ejecutivo',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/qsaf8die9a3aqhegxysg.webp',
+    title: 'Colaboración',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/jhmk7uvsym0uffsmxepp.webp',
+    title: 'Coworking Chetumal',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/tclkqzehgwl6grsfbk2q.webp',
+    title: 'Flextime anywhere',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/ihqzheiqtbkzbsyuemwk.webp',
+    title: 'Flextime',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/frh3cx10hteuend4wook.webp',
+    title: 'Impulsando tu negocio',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832220/Webpage/Coworking/fzbofuwwcdwgiqumll49.webp',
+    title: 'Networking',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832220/Webpage/Coworking/b0dt03gq1ggsweeyf0hq.webp',
+    title: 'Nueva era de los negocios',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832220/Webpage/Coworking/f6mobh800f8wggslyhrk.webp',
+    title: 'Productivo donde te encuentres',
+    description: ''
   }]
 
   return (
@@ -242,10 +285,10 @@ export default function Coworking () {
                 </div>
               </section>
             </div>
-            <div className='w-full flex flex-col gap-10'>
-              <h2 className='text-[22px]'>Instalaciones</h2>
-              <div className='w-full h-full border border-[#142e38]'>
-                <CustomCarousel elements={carouselImages} height='h-[450px]' />
+            <div className='w-full flex flex-col justify-center items-center gap-10'>
+              <h2 className='text-[22px] self-start'>Instalaciones</h2>
+              <div className='w-full md:w-[80%] h-full border border-[#142e38]'>
+                <CustomCarousel elements={carouselImages} height='h-[268px] md:h-[550px]' />
               </div>
             </div>
           </div>

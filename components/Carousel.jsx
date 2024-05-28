@@ -14,8 +14,7 @@ export const CustomCarousel = ({ elements, height }) => {
   const lightboxA = elements.map(element => {
     return {
       src: element.image,
-      title: element.title,
-      description: element.description
+      title: element.title
     }
   })
 
@@ -38,8 +37,8 @@ export const CustomCarousel = ({ elements, height }) => {
           return (
             <div key={i} className={`w-full ${height} flex justify-center items-center cursor-pointer`}>
               <Image
-                className='w-full h-full object-cover object-center'
-                height='400'
+                className='object-contain object-center'
+                height='550'
                 width='600'
                 alt=''
                 src={element.image}

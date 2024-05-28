@@ -14,7 +14,10 @@ import { CustomCarousel } from '@/components/Carousel'
 
 export const metadata = {
   title: 'Renta de Sala de Capacitación en Chetumal, Quintana Roo: Espacios ideales para formación profesional',
-  description: 'Reserva tu sala de capacitación en Chetumal, Quintana Roo. Espacios equipados para eventos formativos en Bahía Business Center.'
+  description: 'Reserva tu sala de capacitación en Chetumal, Quintana Roo. Espacios equipados para eventos formativos en Bahía Business Center.',
+  openGraph: {
+    images: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832512/Webpage/Sala%20de%20Capacitaci%C3%B3n/ch0dfrn93rfhjlo1rkw6.webp'
+  }
 }
 
 export default function SalaTraining () {
@@ -22,19 +25,39 @@ export default function SalaTraining () {
   const BANNER_SUBTITLE = '(TRAINING ROOM)'
   const BANNER_DESCRIPTION = 'Espacio ideal multifuncional adecuado para la impartición de  cursos, talleres, conferencias e incluso diplomados con una capacidad de hasta 16 personas'
   const carouselImages = [{
-    image: 'https://placehold.co/600x400',
-    title: 'Lugar 1',
-    description: 'Descripción del lugar 1'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832512/Webpage/Sala%20de%20Capacitaci%C3%B3n/pdytsizzgpdvfs2cimex.webp',
+    title: 'Breakfast workshop',
+    description: ''
   },
   {
-    image: 'https://placehold.co/600x500',
-    title: 'Lugar 2',
-    description: 'Descripción del lugar 2'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832512/Webpage/Sala%20de%20Capacitaci%C3%B3n/ch0dfrn93rfhjlo1rkw6.webp',
+    title: 'Capacitación empresas',
+    description: ''
   },
   {
-    image: 'https://placehold.co/600x600',
-    title: 'Lugar 3',
-    description: 'Descripción del lugar 3'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832512/Webpage/Sala%20de%20Capacitaci%C3%B3n/pflxx3to73qtrtvkwi4c.webp',
+    title: 'Capacitación posgrados',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832512/Webpage/Sala%20de%20Capacitaci%C3%B3n/dcmdexqnwmy0w9dyarxg.webp',
+    title: 'Meeting room',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832513/Webpage/Sala%20de%20Capacitaci%C3%B3n/eoncqqg3kamdlmto9bxb.webp',
+    title: 'Mesa de trabajo',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832513/Webpage/Sala%20de%20Capacitaci%C3%B3n/ik9borlmtkqhb0hj5dc8.webp',
+    title: 'Sala de consejo',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832513/Webpage/Sala%20de%20Capacitaci%C3%B3n/mgrzpscyuzlpdrkyf9zj.webp',
+    title: 'Workshop room',
+    description: ''
   }]
 
   return (
@@ -263,10 +286,10 @@ export default function SalaTraining () {
                 </div>
               </section>
             </div>
-            <div className='w-full flex flex-col gap-10'>
-              <h2 className='text-[22px]'>Instalaciones</h2>
-              <div className='w-full min-h-full border border-[#142e38]'>
-                <CustomCarousel elements={carouselImages} height='h-[530px]' />
+            <div className='w-full flex flex-col justify-center items-center gap-10'>
+              <h2 className='text-[22px] self-start'>Instalaciones</h2>
+              <div className='w-full md:w-[80%] min-h-full border border-[#142e38]'>
+                <CustomCarousel elements={carouselImages} height='h-[268px] md:h-[550px]' />
               </div>
             </div>
           </div>

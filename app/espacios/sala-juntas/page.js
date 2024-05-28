@@ -13,26 +13,39 @@ import { CustomCarousel } from '@/components/Carousel'
 
 export const metadata = {
   title: 'Renta de Sala de Juntas en Chetumal, Quintana Roo: Espacios profesionales para reuniones exitosas',
-  description: 'Encuentra salas de juntas en Chetumal, Quintana Roo. Ambientes ideales para reuniones exitosas en Bahía Business Center.'
+  description: 'Encuentra salas de juntas en Chetumal, Quintana Roo. Ambientes ideales para reuniones exitosas en Bahía Business Center.',
+  openGraph: {
+    images: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832469/Webpage/Sala%20de%20Juntas/f21htfihzjpgxr8lkcut.webp'
+  }
 }
 
 export default function SalaJuntas () {
   const BANNER_TEXT = 'SALA DE JUNTAS'
   const BANNER_DESCRIPTION = 'Área multiusos designada donde se puede tener reuniones laborales o extraordinarias, así como también ponencias y pláticas de negocios'
   const carouselImages = [{
-    image: 'https://placehold.co/600x400',
-    title: 'Lugar 1',
-    description: 'Descripción del lugar 1'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832468/Webpage/Sala%20de%20Juntas/aq7dbm6akjp5bnjemrvy.webp',
+    title: 'Reunión de planificación',
+    description: ''
   },
   {
-    image: 'https://placehold.co/600x500',
-    title: 'Lugar 2',
-    description: 'Descripción del lugar 2'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832469/Webpage/Sala%20de%20Juntas/td9hdoig2rrc2gmeoopa.webp',
+    title: 'Reunión de resultados',
+    description: ''
   },
   {
-    image: 'https://placehold.co/600x600',
-    title: 'Lugar 3',
-    description: 'Descripción del lugar 3'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832469/Webpage/Sala%20de%20Juntas/f21htfihzjpgxr8lkcut.webp',
+    title: 'Sala de juntas alta voz',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832468/Webpage/Sala%20de%20Juntas/eef94hukbkrnnih0zib2.webp',
+    title: 'Sala de juntas',
+    description: ''
+  },
+  {
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832468/Webpage/Sala%20de%20Juntas/agexe4zpllp0fmx0azx0.webp',
+    title: 'Trabajo en equipo',
+    description: ''
   }]
 
   return (
@@ -236,10 +249,10 @@ export default function SalaJuntas () {
                 </div>
               </section>
             </div>
-            <div className='w-full flex flex-col gap-10'>
-              <h2 className='text-[22px]'>Instalaciones</h2>
-              <div className='w-full h-full border border-[#142e38]'>
-                <CustomCarousel elements={carouselImages} height='h-[450px]' />
+            <div className='w-full flex flex-col justify-center items-center gap-10'>
+              <h2 className='text-[22px] self-start'>Instalaciones</h2>
+              <div className='w-full md:w-[60%] h-full border border-[#142e38]'>
+                <CustomCarousel elements={carouselImages} height='h-[300px] md:h-[550px]' />
               </div>
             </div>
           </div>

@@ -2,7 +2,6 @@ import { Banner } from '@/components/Banner'
 import { ContactForm } from '@/components/Form'
 import { ServiceCard } from '@/components/ServiceCard'
 import Image from 'next/image'
-import ServiceCover from '../../assets/rafiki.svg'
 import Down from '../../assets/down.svg'
 import Wifi from '../../assets/wifi.svg'
 import Air from '../../assets/air-conditioning.svg'
@@ -15,7 +14,10 @@ import { SliderMobile } from '@/components/SliderMobile'
 
 export const metadata = {
   title: 'Espacios Bahía: Coworking, Oficinas Privadas, Oficinas Virtuales, Salas de Reuniones y Capacitación en Renta',
-  description: 'Explora Espacios Bahía: tu destino para coworking, oficinas privadas, virtuales, salas de reuniones y capacitación en Chetumal, Quintana Roo. ¡Encuentra el espacio perfecto para tu negocio hoy mismo!'
+  description: 'Explora Espacios Bahía: tu destino para coworking, oficinas privadas, virtuales, salas de reuniones y capacitación en Chetumal, Quintana Roo. ¡Encuentra el espacio perfecto para tu negocio hoy mismo!',
+  openGraph: {
+    images: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/tclkqzehgwl6grsfbk2q.webp'
+  }
 }
 
 export default function Espacios () {
@@ -189,41 +191,41 @@ export default function Espacios () {
             </section>
           </div>
           <div className='hidden md:flex flex-col w-full h-full justify-center items-center gap-[65px]'>
-            <div className='flex justify-center gap-[60px] items-center w-full h-full'>
+            <div className='flex justify-center 2xl:justify-between gap-[60px] items-center w-full h-full'>
               <ServiceCard
-                image={ServiceCover}
+                image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832219/Webpage/Coworking/tclkqzehgwl6grsfbk2q.webp'
                 title='Coworking'
                 text='Trabaja de forma independiente mientras disfrutas de los beneficios de la colaboración, el intercambio de ideas y el establecimiento de conexiones significativas.'
                 link='/espacios/coworking'
               />
               <ServiceCard
-                image={ServiceCover}
+                image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832414/Webpage/Oficinas%20Privadas/ffg9wbr4pxjhbgrdqrhx.webp'
                 title='Oficina privada'
                 text='Área dedicada exclusivamente a una persona o equipo específico, separada físicamente del resto del espacio compartido.'
                 link='/espacios/oficina-privada'
               />
               <ServiceCard
-                image={ServiceCover}
+                image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832546/Webpage/Oficina%20Virtual/vwopybmv2nu52ctrvahp.webp'
                 title='Oficina virtual'
-                text='Área donde disfrutar de cierto grado de privacidad visual y acústica, manteniendo un sentido de conexión con la comunidad de trabajo más amplia.'
+                text='Solución que permite a los profesionales y a las empresas trabajar desde cualquier lugar, sin necesidad de tener un espacio físico propio, pero si un punto de reunión para tus clientes y proveedores.'
                 link='/espacios/oficina-virtual'
               />
             </div>
             <div className='w-full flex justify-between items-center gap-[65px]'>
               <ServiceCard
-                image={ServiceCover}
+                image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832469/Webpage/Sala%20de%20Juntas/f21htfihzjpgxr8lkcut.webp'
                 title='Sala de juntas'
                 text='Espacio designado específicamente para reuniones, presentaciones y discusiones entre equipos, clientes o socios comerciales, con tecnología audiovisual para facilitar la
-                  comunicación efectiva y la colaboración durante las reuniones.'
+                comunicación efectiva y la colaboración durante las reuniones.'
                 height='h-auto'
                 width='w-full'
                 link='/espacios/sala-juntas'
               />
               <ServiceCard
-                image={ServiceCover}
+                image='https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832512/Webpage/Sala%20de%20Capacitaci%C3%B3n/ch0dfrn93rfhjlo1rkw6.webp'
                 title='Sala de capacitación (Training Room)'
                 text='La atmósfera tranquila y profesional de la sala de capacitación la convierte en el lugar perfecto para sumergirse en el aprendizaje y la reflexión. Ya sea para una sesión de capacitación intensiva,
-                  un taller interactivo o una reunión estratégica.'
+                un taller interactivo o una reunión estratégica.'
                 height='h-auto'
                 width='w-full'
                 link='/espacios/sala-training'

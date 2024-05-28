@@ -11,26 +11,29 @@ import { CustomCarousel } from '@/components/Carousel'
 
 export const metadata = {
   title: 'Renta de Oficinas Virtuales en Chetumal, Quintana Roo: Tu espacio de trabajo desde cualquier lugar',
-  description: 'Encuentra oficinas virtuales flexibles en Chetumal, Quintana Roo. Trabaja desde cualquier lugar con nuestra solución profesional y eficiente con Bahía Business Center.'
+  description: 'Encuentra oficinas virtuales flexibles en Chetumal, Quintana Roo. Trabaja desde cualquier lugar con nuestra solución profesional y eficiente con Bahía Business Center.',
+  openGraph: {
+    images: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832546/Webpage/Oficina%20Virtual/vwopybmv2nu52ctrvahp.webp'
+  }
 }
 
 export default function OficinaVirtual () {
   const BANNER_TEXT = 'OFICINA VIRTUAL'
   const BANNER_DESCRIPTION = 'Te ofrecemos una solución completa para tu empresa sin la necesidad de una ubicación física.'
   const carouselImages = [{
-    image: 'https://placehold.co/600x400',
-    title: 'Lugar 1',
-    description: 'Descripción del lugar 1'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832545/Webpage/Oficina%20Virtual/lvaxnwzij76fpvodq5b6.webp',
+    title: 'Oficina virtual lobby',
+    description: ''
   },
   {
-    image: 'https://placehold.co/600x500',
-    title: 'Lugar 2',
-    description: 'Descripción del lugar 2'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832546/Webpage/Oficina%20Virtual/vwopybmv2nu52ctrvahp.webp',
+    title: 'Agente oficina virtual',
+    description: ''
   },
   {
-    image: 'https://placehold.co/600x600',
-    title: 'Lugar 3',
-    description: 'Descripción del lugar 3'
+    image: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716848090/Webpage/Oficina%20Virtual/dhl-1_yfb7sm.svg',
+    title: 'DHL Pick up',
+    description: ''
   }]
 
   return (
@@ -173,7 +176,7 @@ export default function OficinaVirtual () {
               </section>
             </div>
             <div className='w-full h-full border border-[#142e38]'>
-              <CustomCarousel elements={carouselImages} />
+              <CustomCarousel elements={carouselImages} height='h-[268px] md:h-[438px]' />
             </div>
           </div>
         </section>

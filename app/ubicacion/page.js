@@ -8,7 +8,10 @@ import Clock from '../../assets/clock.svg'
 
 export const metadata = {
   title: 'Ubicación de Bahía Business Center, descubre el lugar ideal para tu negocio',
-  description: 'Explora nuestra ubicación en Chetumal, Quintana Roo. Encuentra el lugar perfecto para trabajar y colaborar.'
+  description: 'Explora nuestra ubicación en Chetumal, Quintana Roo. Encuentra el lugar perfecto para trabajar y colaborar.',
+  openGraph: {
+    images: 'https://res.cloudinary.com/dr3zld4hx/image/upload/v1716832545/Webpage/Oficina%20Virtual/lvaxnwzij76fpvodq5b6.webp'
+  }
 }
 
 export default function Espacios () {
